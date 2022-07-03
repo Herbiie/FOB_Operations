@@ -1,6 +1,8 @@
 GenericEntity : "{A9989C248817C11E}Prefabs/Props/Military/AmmoBoxes/FIA/EquipmentBoxWooden_Weapon_01_FIA.et" {
  ID "F0DBA538AC2A0552"
  components {
+  ControllersManagerComponent "{59C4E6EB3ABFEAAB}" {
+  }
   SignalsManagerComponent "{59C368171A7F0935}" {
   }
   BaseTriggerComponent "{59BAE886DAB89A07}" : "{39A56BB9FC9D130F}Prefabs/Vehicles/Wheeled/Ural4320/BaseTriggerComponentSatchel.ct" {
@@ -26,8 +28,8 @@ GenericEntity : "{A9989C248817C11E}Prefabs/Props/Military/AmmoBoxes/FIA/Equipmen
   }
   NwkMovementComponent "{59BB2AE136D7DD19}" {
   }
-  ControllersManagerComponent "{59C4E6EB3ABFEAAB}" {
+  Hierarchy "{59C6BBE0985AA19D}" {
   }
  }
- coords 2694.058 67.714 6599.394
+ coords 6465.453 162.33 6505.973
 }

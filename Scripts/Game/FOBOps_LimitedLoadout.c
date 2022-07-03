@@ -1,4 +1,4 @@
-//------------------------------------------------------------------------------------------------
+//---------WORK IN PROGRESS--------------------------------------------------------------------
 [BaseContainerProps(configRoot: true), BaseContainerCustomTitleField("m_sLoadoutName")]
 class FOBOps_LimitedLoadout : SCR_FactionPlayerLoadout
 {

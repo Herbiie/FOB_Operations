@@ -1,17 +1,3 @@
-NO_SCR_MissionTrigger Test : "{52FA44EBEB3115FC}Prefabs/MP/Triggers/NO_MissionTrigger.et" {
- coords 6462.547 162.259 6499.01
- OnPlayerQuotaReached ""\
- "		array<int> PlayersArray = new array<int>();"\
- "		GetGame().GetPlayerManager().GetPlayers(PlayersArray);"\
- "		foreach(int PlayerId : PlayersArray )"\
- "		{"\
- "			IEntity PlayerEntity = GetGame().GetPlayerManager().GetPlayerControlledEntity(PlayerId);"\
- "			SCR_ChimeraCharacter PlayerCharacter = SCR_ChimeraCharacter.Cast(PlayerEntity);"\
- "			SCR_BasePlayerLoadout PlayerLoadout = SCR_BasePlayerLoadout.Cast(PlayerEntity);"\
- "			Print(PlayerLoadout);"\
- "		}"\
- "	"
-}
 FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
  coords 2845.267 86.55 6342.628
  m_sCrateSpawners {

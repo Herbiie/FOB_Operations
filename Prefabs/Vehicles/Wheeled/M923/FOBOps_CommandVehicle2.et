@@ -689,6 +689,7 @@ Vehicle : "{38186F12F27A61C6}Prefabs/Vehicles/Wheeled/M923A1/M923A1_command_MERD
   SCR_UniversalInventoryStorageComponent "{5916C580F1DA28BB}" {
    Attributes SCR_ItemAttributeCollection "{5916C580F04BA310}" {
    }
+   StoragePurpose 111
    UseCapacityCoefficient 0
    MaxCumulativeVolume 10000
    m_fMaxWeight 5
@@ -1011,5 +1012,5 @@ Vehicle : "{38186F12F27A61C6}Prefabs/Vehicles/Wheeled/M923A1/M923A1_command_MERD
   RplComponent "{517AACDFA78F5EE7}" {
   }
  }
- coords 3067.208 81.009 6439.075
+ coords 6465.409 162.146 6496.333
 }

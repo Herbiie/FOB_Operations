@@ -27,6 +27,7 @@ $grp SCR_VehicleSpawn {
 }
 SCR_SpawnPoint CommandSpawn : "{2742FFF98676D8FB}Prefabs/Vehicles/Wheeled/M923/FOBOps_CommandVehicleSpawn.et" {
  coords 6439.483 162.229 6493.098
+ m_fSpawnRadius 10
 }
 SCR_AIGroup : "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" {
  coords 6409.152 162.561 6463.638
