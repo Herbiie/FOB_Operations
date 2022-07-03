@@ -1,0 +1,13 @@
+GenericEntity : "{CC7C867E0D538C93}Prefabs/Props/ObjectiveCrate.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  ActionsManagerComponent "{5476B36C403D4CC0}" {
+   additionalActions {
+    FOBOps_SCR_Satchel_Action "{59BB59D97DAA6033}" {
+     m_sTaskName "FigariTask"
+    }
+   }
+  }
+ }
+ coords 5344.81 75.514 5273.102
+}

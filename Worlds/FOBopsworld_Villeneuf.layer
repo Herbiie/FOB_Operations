@@ -1,0 +1,181 @@
+NO_SCR_MissionTrigger Test : "{52FA44EBEB3115FC}Prefabs/MP/Triggers/NO_MissionTrigger.et" {
+ coords 6462.547 162.259 6499.01
+ OnPlayerQuotaReached ""\
+ "		array<int> PlayersArray = new array<int>();"\
+ "		GetGame().GetPlayerManager().GetPlayers(PlayersArray);"\
+ "		foreach(int PlayerId : PlayersArray )"\
+ "		{"\
+ "			IEntity PlayerEntity = GetGame().GetPlayerManager().GetPlayerControlledEntity(PlayerId);"\
+ "			SCR_ChimeraCharacter PlayerCharacter = SCR_ChimeraCharacter.Cast(PlayerEntity);"\
+ "			SCR_BasePlayerLoadout PlayerLoadout = SCR_BasePlayerLoadout.Cast(PlayerEntity);"\
+ "			Print(PlayerLoadout);"\
+ "		}"\
+ "	"
+}
+FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+ coords 2845.267 86.55 6342.628
+ m_sCrateSpawners {
+  "Villeneuf1" "Villeneuf2" "Villeneuf3"
+ }
+ m_sTaskName "VilleneufTask"
+ {
+  $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
+   {
+    coords 19.304 -0.424 39.848
+   }
+   {
+    coords -33.352 0.84 -45.47
+   }
+   {
+    coords 82.037 1.321 26.506
+   }
+   {
+    coords 98.03 28.403 -207.151
+   }
+   {
+    coords 117.016 -7.866 205.375
+   }
+   {
+    coords 62.617 3.814 -29.471
+   }
+   {
+    coords 3.776 1.756 -37.673
+   }
+   {
+    coords -59.754 -4.8 82.144
+   }
+   {
+    coords 62.625 -9.368 283.674
+   }
+   {
+    coords 67.446 -4.079 103.046
+   }
+  }
+  $grp GenericEntity : "{A38CBA2203AA3B0F}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiGroupPatrol.et" {
+   {
+    coords 23.556 -23.875 415.77
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -28.095 19.731 -334.385
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 14.01 23.135 -310.792
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -125.726 23.319 -380.814
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 76.57 33.245 -442.147
+     }
+    }
+   }
+   {
+    coords -243.959 -30.053 233.12
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 194.502 26.581 -187.302
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 240.725 26.994 -150.916
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 240.7 29.845 -242.354
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 297.861 30.901 -167.004
+     }
+    }
+   }
+   {
+    coords 291.998 -16.301 248.385
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -316.155 12.164 -181.837
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -276.486 11.632 -141.211
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -310.087 16.436 -241.128
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -405.458 10.081 -229.038
+     }
+    }
+   }
+   {
+    coords -343.55 -24.596 -24.974
+    {
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 257.663 22.435 64.206
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 359.807 20.941 118.352
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 284.608 20.464 71.992
+     }
+    }
+   }
+  }
+  $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
+   Villeneuf1 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{04E34135679EAE7C}Prefabs/Props/VilleneufCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 14.461 -0.422 57.241
+   }
+   Villeneuf2 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{04E34135679EAE7C}Prefabs/Props/VilleneufCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 119.374 -7.861 211.049
+   }
+   Villeneuf3 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{04E34135679EAE7C}Prefabs/Props/VilleneufCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 99.355 1.399 26.941
+   }
+  }
+ }
+}

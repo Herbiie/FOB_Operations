@@ -1,0 +1,174 @@
+FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+ coords 9268.398 57.285 2069.283
+ m_sCrateSpawners {
+  "Vernon1" "Vernon2" "Vernon3"
+ }
+ m_sTaskName "VernonTask"
+ {
+  $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
+   {
+    coords -5.264 1.356 -46.381
+   }
+   {
+    coords -46.938 3.59 -8.36
+   }
+   {
+    coords -74.572 7.376 56.79
+   }
+   {
+    coords 19.507 2.531 29.412
+   }
+   {
+    coords 87.412 -0.562 -41.892
+   }
+   {
+    coords -48.612 2.692 -147.118
+   }
+   {
+    coords 33.769 -0.502 -9.667
+   }
+   {
+    coords -38.654 4.939 48.305
+   }
+   {
+    coords 50.07 -6.75 -107.448
+   }
+   {
+    coords -34.867 4.805 30.047
+   }
+   {
+    coords -76.543 5.943 5.663
+   }
+  }
+  $grp GenericEntity : "{A38CBA2203AA3B0F}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiGroupPatrol.et" {
+   {
+    coords 164.317 31.764 63.862
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -178.29 -30.289 -54.472
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -126.455 -37.234 -126.236
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -235.819 -29.707 -43.147
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -177.058 -22.336 1.288
+     }
+    }
+   }
+   {
+    coords -109.885 37.93 -229.843
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 112.167 -38.419 223.621
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 7.349 -31.996 270.558
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 169.075 -42.929 128.784
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 116.24 -35.811 280.848
+     }
+    }
+   }
+   {
+    coords 45.22 35.036 217.179
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -43.254 -35.258 -218.982
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -148.586 -26.435 -182.584
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -46.939 -38.047 -223.622
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 6.331 -39.108 -302.076
+     }
+    }
+   }
+   {
+    coords -189.22 25.111 -23.991
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 113.676 -18.386 41.686
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 145.754 -15.944 92.268
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 231.506 -28.172 -22.53
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 177.2 -30.276 -69.746
+     }
+    }
+   }
+  }
+  $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
+   Vernon1 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{FE1D87B56D44DA4D}Prefabs/Props/VernonCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 29.439 -5.253 -80.691
+   }
+   Vernon2 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{FE1D87B56D44DA4D}Prefabs/Props/VernonCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -76.206 4.145 -0.03
+   }
+   Vernon3 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{FE1D87B56D44DA4D}Prefabs/Props/VernonCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -36.561 5.703 31.97
+   }
+  }
+ }
+}

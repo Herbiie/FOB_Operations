@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{2742FFF98676D8FB}Prefabs/Vehicles/Wheeled/M923/FOBOps_CommandVehicleSpawn.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,177 @@
+$grp SCR_VehicleSpawn {
+ {
+  coords 6429.605 162.062 6478.34
+  angleY -21.599
+  m_rnPrefab "{DD774A8FD0989A78}Prefabs/Vehicles/Wheeled/M998/M1025_armed_M2HB_MERDC.et"
+ }
+ {
+  coords 6423.462 162.014 6476.413
+  angleY -20.652
+  m_rnPrefab "{DD774A8FD0989A78}Prefabs/Vehicles/Wheeled/M998/M1025_armed_M2HB_MERDC.et"
+ }
+ {
+  coords 6418.494 161.943 6474.158
+  angleY -17.191
+  m_rnPrefab "{DD774A8FD0989A78}Prefabs/Vehicles/Wheeled/M998/M1025_armed_M2HB_MERDC.et"
+ }
+ {
+  coords 6415.404 161.856 6486.523
+  angleY 117.674
+  m_rnPrefab "{04BDACC0BB83284E}Prefabs/Vehicles/Wheeled/M923A1/M923A1_transport_covered_MERDC.et"
+ }
+ {
+  coords 6428.217 162.127 6493.116
+  angleY 76.031
+  m_rnPrefab "{6E0D5988D1873421}Prefabs/Vehicles/Wheeled/M923/FOBOps_CommandVehicle2.et"
+ }
+}
+SCR_SpawnPoint CommandSpawn : "{2742FFF98676D8FB}Prefabs/Vehicles/Wheeled/M923/FOBOps_CommandVehicleSpawn.et" {
+ coords 6439.483 162.229 6493.098
+}
+SCR_AIGroup : "{3BF36BDEEB33AEC9}Prefabs/Groups/BLUFOR/Group_US_SentryTeam.et" {
+ coords 6409.152 162.561 6463.638
+ angleY -117.428
+ m_aUnitPrefabSlots {
+  "{26A9756790131354}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et"
+ }
+ m_aStaticWaypoints {
+  "defend3"
+ }
+ {
+  SCR_DefendWaypoint defend3 : "{93291E72AC23930F}Prefabs/AI/Waypoints/AIWaypoint_Defend.et" {
+   coords 0 0.004 -0.021
+   angleY 117.428
+   CompletionRadius 2
+  }
+ }
+}
+SCR_SpawnPoint fob : "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et" {
+ coords 6426.519 161.852 6467.052
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+  Name "FOB Nichols"
+ }
+}
+$grp GenericEntity : "{6924DCD5E1DE6FA1}Prefabs/Compositions/TowerBunker.et" {
+ {
+  coords 6505.976 162.818 6496.549
+  angleY 68.677
+ }
+ {
+  coords 6476.801 163.134 6458.132
+  angleY 170.657
+ }
+ {
+  coords 6409.406 162.534 6463.792
+  angleY -118.551
+ }
+}
+$grp StaticModelEntity : "{93E06E731212BD96}Prefabs/Structures/Walls/BarbedWire/BarbedTape_Triple.et" {
+ {
+  coords 6464.078 0.002 6467.218
+  angleY -87.733
+ }
+ {
+  coords 6460.831 0.002 6467.203
+  angleY -95.203
+ }
+ {
+  coords 6478.367 0.001 6518.853
+  angleY 76.738
+ }
+}
+SCR_AIGroup : "{D807C7047E818488}Prefabs/Groups/BLUFOR/Group_US_SniperTeam.et" {
+ coords 6506.128 162.848 6496.716
+ angleY 74.588
+ m_aUnitPrefabSlots {
+  "{0F6689B491641155}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Sniper.et"
+ }
+ m_aStaticWaypoints {
+  "defend2"
+ }
+ {
+  SCR_DefendWaypoint defend2 : "{93291E72AC23930F}Prefabs/AI/Waypoints/AIWaypoint_Defend.et" {
+   coords 0.003 0 -0.012
+   angleY -74.588
+   CompletionRadius 2
+  }
+ }
+}
+SCR_AIGroup : "{DE747BC9217D383C}Prefabs/Groups/BLUFOR/Group_US_Team_GL.et" {
+ coords 6476.914 163.171 6457.849
+ angleY 176.51
+ m_aUnitPrefabSlots {
+  "{84029128FA6F6BB9}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_GL.et"
+ }
+ m_aStaticWaypoints {
+  "defend1"
+ }
+ {
+  SCR_DefendWaypoint defend1 : "{93291E72AC23930F}Prefabs/AI/Waypoints/AIWaypoint_Defend.et" {
+   coords 0.014 -0.007 -0.019
+   angleY -176.51
+   CompletionRadius 2
+  }
+ }
+}
+$grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
+ {
+  components {
+   NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+    m_rnDefaultPrefabs {
+     CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+      prefab {
+       "{44B3130F12865442}Prefabs/Compositions/Slotted/SlotFlatSmall/VehicleMaintenance_S_US_01.et"
+      }
+     }
+    }
+    m_bSpawnImmediately 1
+   }
+  }
+  coords 6505.433 161.792 6475.147
+ }
+ {
+  components {
+   NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+    m_rnDefaultPrefabs {
+     CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+      prefab {
+       "{76A14F180887D76E}Prefabs/Compositions/Slotted/SlotFlatSmall/AmmoStorage_S_US_01.et"
+      }
+     }
+    }
+    m_bSpawnImmediately 1
+   }
+  }
+  coords 6439.099 161.757 6458.634
+ }
+ {
+  components {
+   NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+    m_rnDefaultPrefabs {
+     CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+      prefab {
+       "{CB029BADCAFE664C}Prefabs/Compositions/Slotted/SlotFlatSmall/Antenna_S_US_01.et"
+      }
+     }
+    }
+    m_bSpawnImmediately 1
+   }
+  }
+  coords 6422.989 161.149 6454.122
+ }
+ {
+  components {
+   NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+    m_rnDefaultPrefabs {
+     CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+      prefab {
+       "{BE99D77D1155B127}Prefabs/Systems/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et"
+      }
+     }
+    }
+    m_bSpawnImmediately 1
+   }
+  }
+  coords 6446.051 161.973 6464.044
+ }
+}

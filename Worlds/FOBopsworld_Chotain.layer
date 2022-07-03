@@ -1,0 +1,163 @@
+FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+ coords 7066.943 118.873 6029.418
+ m_sCrateSpawners {
+  "ChotainCrateSpawn1" "ChotainCrateSpawn2" "ChotainCrateSpawn3"
+ }
+ m_sTaskName "ChotainTask"
+ {
+  $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
+   {
+    coords -77.264 -4.328 -91.135
+   }
+   {
+    coords -46.011 -0.3 -12.181
+   }
+   {
+    coords 35.167 -0.935 98.199
+   }
+   {
+    coords 73.214 -0.389 35.218
+   }
+   {
+    coords 11.252 -1.081 -36.254
+   }
+   {
+    coords -5.899 1.579 48.623
+   }
+  }
+  $grp GenericEntity : "{A38CBA2203AA3B0F}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiGroupPatrol.et" {
+   {
+    components {
+     NO_SCR_AISpawnerComponent "{59BAED3D3830C7C5}" {
+      m_bRespawn 1
+     }
+    }
+    coords 188.632 -21.602 62.565
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -157.48 22.152 -16.201
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -149.391 13.327 21.502
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -96.867 6.929 -130.185
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -238.199 -3.241 -108.575
+     }
+    }
+   }
+   {
+    coords -5.419 0.357 -146.292
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 1.945 -0.584 140.281
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 44.327 8.027 205.446
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -73.497 16.074 183.787
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -78.143 4.792 79.954
+     }
+    }
+   }
+   {
+    coords -282.935 20.649 224.874
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 276.321 -20.739 -227.615
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 274.514 -19.942 -131.473
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 327.43 -23.91 -298.14
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 145.061 -26.801 -315.65
+     }
+    }
+   }
+   {
+    coords 339.04 -76.773 108.066
+    {
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -290.748 70.227 -18.259
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -258.116 74.887 -145.539
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -415.342 70.734 -168.736
+     }
+    }
+   }
+  }
+  $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
+   ChotainCrateSpawn1 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{221D94C51402C228}Prefabs/Props/ChotainCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -50.156 -4.265 -97.002
+    angleY -35.674
+   }
+   ChotainCrateSpawn2 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{221D94C51402C228}Prefabs/Props/ChotainCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -55.115 -0.3 -20.394
+    angleY -35.674
+   }
+   ChotainCrateSpawn3 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{221D94C51402C228}Prefabs/Props/ChotainCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 35.751 2.124 -51.53
+    angleY -35.674
+   }
+  }
+ }
+}

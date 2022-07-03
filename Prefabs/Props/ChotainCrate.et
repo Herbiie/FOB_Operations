@@ -1,0 +1,17 @@
+GenericEntity : "{CC7C867E0D538C93}Prefabs/Props/ObjectiveCrate.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  NO_SCR_DTFRenamerComponent "{59BB33F3DAC237D6}" {
+   m_sNewName "ChotainCrate"
+  }
+  ActionsManagerComponent "{5476B36C403D4CC0}" {
+   additionalActions {
+    FOBOps_SCR_Satchel_Action "{59BB59D97DAA6033}" {
+     m_sTaskName "ChotainTask"
+    }
+   }
+  }
+ }
+ coords 7025.744 117.332 5989.237
+ angleY 0
+}

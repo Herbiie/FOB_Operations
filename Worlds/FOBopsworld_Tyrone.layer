@@ -1,0 +1,121 @@
+FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+ coords 4926.122 36.077 9094.813
+ m_sCrateSpawners {
+  "Tyrone1" "Tyrone2" "Tyrone3"
+ }
+ m_sTaskName "TyroneTask"
+ {
+  $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
+   {
+    coords 36.528 0.55 17.77
+   }
+   {
+    coords -28.356 -0.421 37.368
+   }
+   {
+    coords 17.962 6.317 -103.509
+   }
+   {
+    coords 16.418 2.027 -37.322
+   }
+   {
+    coords -44.257 -0.17 -5.422
+   }
+   {
+    coords -19.547 4.964 -62.408
+   }
+   {
+    coords 54.345 1.857 -18.412
+   }
+  }
+  $grp GenericEntity : "{A38CBA2203AA3B0F}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiGroupPatrol.et" {
+   {
+    coords -40.239 21.059 -249.63
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 46.605 -21.068 246.675
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 48.674 -21.005 311.331
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 129.308 -15.032 163.731
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -17.82 -17.373 168.926
+     }
+    }
+   }
+   {
+    coords -74.095 15.954 -192.094
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 59.563 -15.012 174.278
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 75.107 -13.356 191.936
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 152.207 -10.797 146.356
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 85.646 -15.839 237.268
+     }
+    }
+   }
+  }
+  $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
+   Tyrone1 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{D5AAF71BBBD6D6DF}Prefabs/Props/TyroneCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 41.389 0.856 1.153
+   }
+   Tyrone2 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{D5AAF71BBBD6D6DF}Prefabs/Props/TyroneCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 5.288 7.836 -23.717
+   }
+   Tyrone3 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{D5AAF71BBBD6D6DF}Prefabs/Props/TyroneCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -46.46 -0.545 5.199
+    angleY 127.712
+   }
+  }
+ }
+}

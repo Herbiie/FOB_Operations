@@ -1,0 +1,124 @@
+FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+ coords 5506.613 95.658 6084.685
+ m_sCrateSpawners {
+  "Provins1" "Provins2" "Provins3"
+ }
+ m_sTaskName "ProvinsTask"
+ {
+  $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
+   {
+    coords 146.505 -3.931 -201.06
+   }
+   {
+    coords 81.034 0.633 -25.009
+   }
+   {
+    coords -12.22 -1.359 -28.829
+   }
+   {
+    coords 3.3 0.311 20.41
+   }
+   {
+    coords -11.46 -3.389 -89
+   }
+   {
+    coords 46.712 0.218 -67.997
+   }
+   {
+    coords 55.8 0.404 4.855
+   }
+   {
+    coords 82.441 -6.325 -227.798
+   }
+  }
+  $grp GenericEntity : "{A38CBA2203AA3B0F}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiGroupPatrol.et" {
+   {
+    coords -107.036 -3.973 -160.194
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 130.177 4.969 46.76
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 61.599 11.514 194.221
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 204.639 12.479 111.769
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 242.582 6.131 -27.11
+     }
+    }
+   }
+   {
+    coords -248.707 -31.889 -75.75
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 278.885 31.591 56.91
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 211.905 33.197 99.708
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 296.081 31.074 48.209
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 225.046 32.223 67.189
+     }
+    }
+   }
+  }
+  $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
+   Provins1 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{1697ACD228D3CFB0}Prefabs/Props/ProvinsCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 157.239 -3.131 -204.312
+   }
+   Provins2 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{1697ACD228D3CFB0}Prefabs/Props/ProvinsCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 50.446 0.221 -40.999
+    angleY 13.267
+   }
+   Provins3 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{1697ACD228D3CFB0}Prefabs/Props/ProvinsCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 15.575 7.214 13.358
+   }
+  }
+ }
+}

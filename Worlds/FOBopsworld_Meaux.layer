@@ -1,0 +1,192 @@
+FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+ coords 4489.555 14.793 9514.03
+ m_sCrateSpawners {
+  "Meaux1" "Meaux2" "Meaux3" "Meaux4"
+ }
+ m_sTaskName "MeauxTask"
+ {
+  $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
+   {
+    coords -53.005 0.351 53.963
+   }
+   {
+    coords 32.462 -0.792 -14.577
+   }
+   {
+    coords 38.902 -3.953 -120.838
+   }
+   {
+    coords 39.049 3.439 78.982
+   }
+   {
+    coords 101.3 4.033 -4.629
+   }
+   {
+    coords -180.225 -13.667 41.841
+   }
+   {
+    coords -26.173 -1.314 -48.291
+   }
+   {
+    coords 95.313 -0.468 -62.787
+   }
+   {
+    coords 6.5 4.375 145.212
+   }
+   {
+    coords 84.863 -2.141 -111.5
+   }
+   {
+    coords 25.23 -0.044 -89.263
+   }
+   {
+    coords 68.237 5.756 98.829
+   }
+  }
+  $grp GenericEntity : "{A38CBA2203AA3B0F}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiGroupPatrol.et" {
+   {
+    coords 407.601 23.659 -3.304
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -406.52 -16.981 13.072
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -401.216 -15.564 61.933
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -276.339 -17.867 -82.692
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -404.499 -16.696 -57.628
+     }
+    }
+   }
+   {
+    coords 474.058 35.157 -87.416
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -477.757 -35.22 85.908
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -467.33 -23.431 121.628
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -368.472 -18.098 189.111
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -541.958 -28.407 71.098
+     }
+    }
+   }
+   {
+    coords -263.588 1.42 -287.211
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 288.073 -2.427 231.302
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 312.927 -7.518 116.464
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 267.015 0.208 292.12
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 334.906 -1.418 252.774
+     }
+    }
+   }
+   {
+    coords 71.517 7.911 -388.405
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -58.882 -6.463 427.795
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 4.183 -2.892 420.61
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -67.089 -3.856 481.773
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -67.828 -8.511 361.449
+     }
+    }
+   }
+  }
+  $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
+   Meaux1 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{C6DAC9ED191BD1E3}Prefabs/Props/MeauxCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -55.136 0.735 60.651
+   }
+   Meaux2 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{C6DAC9ED191BD1E3}Prefabs/Props/MeauxCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 37.209 6.508 -19.57
+    angleY 88.502
+   }
+   Meaux3 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{C6DAC9ED191BD1E3}Prefabs/Props/MeauxCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 122.498 4.452 11.733
+   }
+   Meaux4 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{C6DAC9ED191BD1E3}Prefabs/Props/MeauxCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 76.042 0.095 -49.519
+   }
+  }
+ }
+}

@@ -1,0 +1,316 @@
+FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+ coords 4507.041 19.832 10778.363
+ SphereRadius 800
+ m_sCrateSpawners {
+  "StPhillipe1" "StPhillipe2" "StPhillipe3" "StPhillipe4" "StPhillipe5" "StPhillipe6" "StPhillipe7"
+ }
+ m_sTaskName "StPhillipeTask"
+ {
+  $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
+   {
+    coords -82.876 -9.651 -14.014
+   }
+   {
+    coords 20.047 -5.07 30.186
+   }
+   {
+    coords 19.939 -4.069 -111.46
+   }
+   {
+    coords -130.771 -12.862 151.982
+   }
+   {
+    coords -60.361 -18.558 329.099
+   }
+   {
+    coords 57.021 -3.031 184.943
+   }
+   {
+    coords 109.753 -0.66 -7.732
+   }
+   {
+    coords 172.992 2.015 -82.794
+   }
+   {
+    coords 60.305 -3.912 -275.742
+   }
+   {
+    coords 14.244 -5.424 -405.382
+   }
+   {
+    coords -125.678 -4.234 -196.162
+   }
+   {
+    coords -201.282 -15.327 -113.784
+   }
+   {
+    coords -48.024 -4.893 -123.726
+   }
+   {
+    coords -31.52 -9.884 81.247
+   }
+   {
+    coords -24.555 -8.916 179.701
+   }
+   {
+    coords -92.109 -11.224 80.346
+   }
+   {
+    coords -20.19 -5.405 -38.66
+   }
+   {
+    coords 69.007 -3.789 73.104
+   }
+   {
+    coords 99.765 -1.943 -208.36
+   }
+   {
+    coords -151.613 -7.73 -133.983
+   }
+   {
+    coords -51.072 -14.047 435.437
+   }
+   {
+    coords -49.351 -10.965 143.559
+   }
+   {
+    coords -157.699 -11.089 -52.644
+   }
+   {
+    coords -221.629 -5.17 -203.188
+   }
+   {
+    coords 106.343 -1.175 -102.807
+   }
+  }
+  $grp GenericEntity : "{A38CBA2203AA3B0F}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiGroupPatrol.et" {
+   {
+    coords -263.906 17.959 -365.23
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 238.487 -24.314 306.359
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 352.348 -17.849 193.278
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 297.956 -21.939 505.378
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 159.918 -26.484 295.863
+     }
+    }
+   }
+   {
+    coords -442.544 -9.208 -183.636
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 371.496 -2.597 298.658
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 204.516 4.184 10.158
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 496.538 7.667 55.589
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 477.278 5.003 296.697
+     }
+    }
+   }
+   {
+    coords 118.981 -10.388 577.852
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -98.197 4.322 -415.432
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -177.049 0.695 -310.483
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -37.201 10.317 -697.576
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -193.356 8.753 -741.15
+     }
+    }
+   }
+   {
+    coords -408.271 -2.659 -216.506
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 272.279 -2.77 53.046
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 216.815 -2.216 41.949
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 388.738 -0.47 68.343
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 319.75 -4.496 151.017
+     }
+    }
+   }
+   {
+    coords -104.03 6.763 -389.378
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 104.794 -10.437 230.367
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 121.317 -11.506 228.962
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 123.611 -11.769 535.898
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 219.449 -8.974 221.502
+     }
+    }
+   }
+   {
+    coords -18.866 0.004 -498.248
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 85.531 12.829 403.396
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -90.398 -5.498 342.421
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 86.751 -2.165 466.523
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -63.792 -13.689 697.102
+     }
+    }
+   }
+  }
+  $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
+   StPhillipe1 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{02FAC8C0BD37CAE7}Prefabs/Props/StPhillipeCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -95.606 -5.786 -7.354
+   }
+   StPhillipe2 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{02FAC8C0BD37CAE7}Prefabs/Props/StPhillipeCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -148.242 -2.386 -65.55
+   }
+   StPhillipe3 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{02FAC8C0BD37CAE7}Prefabs/Props/StPhillipeCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -208.748 -3.371 -191.113
+   }
+   StPhillipe4 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{02FAC8C0BD37CAE7}Prefabs/Props/StPhillipeCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 22.63 -5.463 42.404
+   }
+   StPhillipe5 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{02FAC8C0BD37CAE7}Prefabs/Props/StPhillipeCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 39.319 -4.637 170.798
+   }
+   StPhillipe6 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{02FAC8C0BD37CAE7}Prefabs/Props/StPhillipeCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 42.049 2.172 0.343
+    angleY -12.037
+   }
+   StPhillipe7 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{02FAC8C0BD37CAE7}Prefabs/Props/StPhillipeCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 62.343 2.182 -282.245
+   }
+  }
+ }
+}

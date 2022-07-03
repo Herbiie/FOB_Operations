@@ -1,0 +1,182 @@
+FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+ coords 7578.008 82.069 5523.477
+ m_sCrateSpawners {
+  "Laruns1" "Laruns2" "Laruns3" "Laruns4"
+ }
+ m_sTaskName "LarunsTask"
+ {
+  $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
+   {
+    coords -10.293 0.92 -44.448
+   }
+   {
+    coords 15.325 -1.974 67.973
+   }
+   {
+    coords -35.959 4.843 -12.562
+   }
+   {
+    coords 58.004 -1.052 -20.903
+   }
+   {
+    coords -4.214 0.357 0.431
+   }
+   {
+    coords -53.015 -1.224 65.314
+   }
+   {
+    coords -4.526 5.316 -163.744
+   }
+   {
+    coords 52.674 -4.734 20.591
+   }
+   {
+    coords -82.799 1.738 54.607
+   }
+  }
+  $grp GenericEntity : "{A38CBA2203AA3B0F}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiGroupPatrol.et" {
+   {
+    coords -169.378 28.927 16.191
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 183.632 -29.714 -20.934
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 151.141 -28.179 34.494
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 214.666 -32.648 -82.266
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 88.856 -19.879 -69.817
+     }
+    }
+   }
+   {
+    coords -76.353 22.719 -231.91
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 84.087 -24.142 258.047
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 89.178 -24.76 216.537
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 5.597 -17.823 250.128
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 74.193 -24.17 154.569
+     }
+    }
+   }
+   {
+    coords -25.221 25.653 -235.991
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 11.563 -24.875 212.29
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 53.611 -29.283 182.176
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 31.064 -26.547 266.749
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -21.267 -10.53 265.877
+     }
+    }
+   }
+   {
+    coords -225.762 36.57 170.122
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 238.899 -38.522 -177.752
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 171.374 -36.44 -135.706
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 279.85 -44.469 -128.992
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 239.963 -38.981 -213.068
+     }
+    }
+   }
+  }
+  $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
+   Laruns1 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{ED33AF3F2DDF5388}Prefabs/Props/LarunsCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -16.125 7.522 -42.258
+   }
+   Laruns2 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{ED33AF3F2DDF5388}Prefabs/Props/LarunsCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 34.351 -1.782 71.795
+   }
+   Laruns3 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{ED33AF3F2DDF5388}Prefabs/Props/LarunsCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -54.239 -1.224 101.527
+   }
+   Laruns4 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{ED33AF3F2DDF5388}Prefabs/Props/LarunsCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -41.784 4.843 -21.985
+   }
+  }
+ }
+}

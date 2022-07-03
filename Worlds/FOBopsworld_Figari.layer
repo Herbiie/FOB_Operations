@@ -1,0 +1,186 @@
+FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+ coords 5271.958 63.965 5351.688
+ m_sCrateSpawners {
+  "Figari1" "Figari2" "Figari3" "Figari4"
+ }
+ m_sTaskName "FigariTask"
+ {
+  $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
+   {
+    coords -126.52 -4.996 24.324
+   }
+   {
+    coords -4.284 -0.243 -13.375
+   }
+   {
+    coords 24.07 -2.958 75.291
+   }
+   {
+    coords 13.164 3.116 -97.365
+   }
+   {
+    coords -267.052 -9.623 89.594
+   }
+   {
+    coords 35.482 2.086 -52.535
+   }
+   {
+    coords -76.481 9.463 -27.881
+   }
+   {
+    coords -36.817 0.536 -57.508
+   }
+   {
+    coords -45.42 -2.346 16.45
+   }
+   {
+    coords 72.965 -0.419 15.928
+   }
+  }
+  $grp GenericEntity : "{A38CBA2203AA3B0F}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiGroupPatrol.et" {
+   {
+    coords -371.319 -8.477 -180.932
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 306.25 4.529 208.594
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 290.466 11.308 57.156
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 406.001 8.917 216.017
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 213.5 -1.194 264.226
+     }
+    }
+   }
+   {
+    coords 397.453 26.4 -168.51
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -378.017 -28.466 197.104
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -311.548 -26.751 250.853
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -460.728 -32.438 212.915
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -425.014 -24.605 81.757
+     }
+    }
+   }
+   {
+    coords -349.416 12.333 -224.921
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 263.288 -15.536 234.305
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 182.251 -2.622 241.221
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 346.091 -8.632 188.101
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 422.458 0.994 310.015
+     }
+    }
+   }
+   {
+    coords -189.477 -0.569 536.608
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 195.002 1.114 -508.757
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 120.569 -1.531 -463.831
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 213.444 2.632 -515.043
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 74.202 1.623 -564.496
+     }
+    }
+   }
+  }
+  $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
+   Figari1 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{A93F988DBE43C3B6}Prefabs/Props/FigariCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -153.184 -5.172 29.588
+   }
+   Figari2 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{A93F988DBE43C3B6}Prefabs/Props/FigariCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 48.836 -1.272 67.917
+   }
+   Figari3 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{A93F988DBE43C3B6}Prefabs/Props/FigariCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 16.934 8.52 -57.431
+   }
+   Figari4 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{A93F988DBE43C3B6}Prefabs/Props/FigariCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -48.452 0.349 -66.465
+    angleY -60.181
+   }
+  }
+ }
+}

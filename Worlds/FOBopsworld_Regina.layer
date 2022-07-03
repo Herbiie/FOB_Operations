@@ -1,0 +1,185 @@
+FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+ coords 7181.968 137.428 2335.3
+ m_sCrateSpawners {
+  "Regina1" "Regina2" "Regina3" "Regina4"
+ }
+ m_sTaskName "ReginaTask"
+ {
+  $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
+   {
+    coords 133.951 1.573 165.44
+   }
+   {
+    coords 37.177 -0.083 53.727
+   }
+   {
+    coords 15.709 -0.016 -60.945
+   }
+   {
+    coords -33.156 0.456 55.555
+   }
+   {
+    coords -20.56 4.039 125.172
+   }
+   {
+    coords -27.257 1.333 -15.073
+   }
+   {
+    coords 33.866 -0.481 3.855
+   }
+   {
+    coords 75.749 -1.017 -127.288
+   }
+   {
+    coords -37.136 4.904 -95.65
+   }
+   {
+    coords 57.573 -0.862 -26.343
+   }
+  }
+  $grp GenericEntity : "{A38CBA2203AA3B0F}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiGroupPatrol.et" {
+   {
+    coords 258.224 16.933 104.725
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -180.646 -16.422 -74.896
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -145.586 -10.469 91.368
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -256.105 -17.562 -23.275
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -260.702 -13.772 -149.396
+     }
+    }
+   }
+   {
+    coords -342.193 -53.504 -138.264
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 344.289 53.306 161.011
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 340.745 66.823 114.53
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 347.822 53.777 234.676
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 406.449 57.592 154.76
+     }
+    }
+   }
+   {
+    coords 253.938 7.551 -2.979
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -249.175 -7.697 20.399
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -256.92 -4.062 107.674
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -250.873 -9.574 -58.92
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -253.553 -4.949 48.01
+     }
+    }
+   }
+   {
+    coords -188.021 14.04 165.549
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 192.737 -14.299 -140.05
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 187.037 -2.952 -14.555
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 193.426 -12.297 -148.466
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 233.396 -9.345 -254.057
+     }
+    }
+   }
+  }
+  $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
+   Regina1 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{C3A58254CDF740A9}Prefabs/Props/ReginaCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 143.227 1.673 188.176
+   }
+   Regina2 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{C3A58254CDF740A9}Prefabs/Props/ReginaCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 40.483 0.121 36.888
+   }
+   Regina3 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{C3A58254CDF740A9}Prefabs/Props/ReginaCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 72.992 0.958 -25.626
+   }
+   Regina4 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{C3A58254CDF740A9}Prefabs/Props/ReginaCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -26.157 4.413 -24.604
+   }
+  }
+ }
+}

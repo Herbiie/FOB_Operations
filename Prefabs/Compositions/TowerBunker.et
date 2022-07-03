@@ -1,0 +1,96 @@
+GenericEntity : "{F0EC223F2A1094C0}Prefabs/Props/Military/Sandbags/Sandbag_01_bunker_burlap.et" {
+ ID "F0DBA538AC2A0552"
+ coords 6506.173 162.968 6496.623
+ angleY 71.249
+ {
+  $grp GenericEntity : "{16415CF017E77E29}Prefabs/Props/Military/Training/Obstacles/ObstacleRamp_01_platform.et" {
+   {
+    ID "59BADB5404B10E45"
+    coords -1.382 -1.267 -1.53
+    angleY -91.073
+   }
+   {
+    ID "59BADB5404B10E46"
+    coords 1.13 -1.267 -1.497
+    angleY -91.073
+   }
+   {
+    ID "59BADB5404B15910"
+    coords 1.077 -1.267 0.006
+    angleY -91.073
+   }
+   {
+    ID "59BADB5404B2A15A"
+    coords -1.432 -1.267 1.487
+    angleY -91.073
+   }
+   {
+    ID "59BADB5404B2A15B"
+    coords -1.41 -1.267 -0.025
+    angleY -91.073
+   }
+   {
+    ID "59BADB5404B2D10B"
+    coords 1.055 -1.267 1.52
+    angleY -91.073
+   }
+  }
+  GenericEntity : "{569C0E9792A6D39A}Prefabs/Props/Military/Training/Obstacles/ObstacleRamp_01_start.et" {
+   ID "59BADB5404B169AE"
+   coords -0.577 -1.166 -3.363
+   angleY 177.742
+  }
+  $grp GenericEntity : "{937999008F178E82}Prefabs/Props/Military/Sandbags/Sandbag_01_short_high_burlap.et" {
+   {
+    ID "59BADB5404B0231B"
+    coords -2.615 -1.305 1.723
+    angleY -90.798
+   }
+   {
+    ID "59BADB5404B0231C"
+    coords -2.869 -1.105 -1.697
+    angleY -90.798
+   }
+   {
+    ID "59BADB5404B0231D"
+    coords -2.663 -1.287 0.082
+    angleY -90.798
+   }
+   {
+    ID "59BADB5404B07CD0"
+    coords -2.232 -1.133 -2.873
+    angleY -0.696
+   }
+   {
+    ID "59BADB5404B09ECA"
+    coords 1.04 -1.35 1.71
+    angleY -0.696
+   }
+   {
+    ID "59BADB5404B09EF7"
+    coords -1.019 -1.351 1.922
+    angleY -0.696
+   }
+   {
+    ID "59BADB5404B1A698"
+    coords 2.501 -1.213 -2.205
+    angleY -90.798
+   }
+   {
+    ID "59BADB5404B1BDAE"
+    coords 2.455 -1.331 1.312
+    angleY -90.798
+   }
+   {
+    ID "59BADB5404B1BDAF"
+    coords 2.435 -1.263 -0.447
+    angleY -90.798
+   }
+   {
+    ID "59BADB5404B1FFE9"
+    coords 1.129 -1.174 -2.668
+    angleY -0.696
+   }
+  }
+ }
+}

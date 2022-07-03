@@ -1,0 +1,191 @@
+FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+ coords 1328.195 40.5 5973.439
+ m_sCrateSpawners {
+  "Lamentin1" "Lamentin2" "Lamentin3" "Lamentin4"
+ }
+ m_sTaskName "LamentinTask"
+ {
+  $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
+   {
+    coords -34.606 -1.846 88.076
+   }
+   {
+    coords -53.595 -2.067 -60.651
+   }
+   {
+    coords 24.296 0.594 -32.252
+   }
+   {
+    coords -127.947 -10.422 130.373
+   }
+   {
+    coords -66.978 -2.977 40.16
+   }
+   {
+    coords -241.347 -37.686 141.13
+   }
+   {
+    coords -3.725 -0.413 20.182
+   }
+   {
+    coords -23.914 -0.016 -115.101
+   }
+   {
+    coords -127.428 -7.711 73.677
+   }
+   {
+    coords -111.222 -9.874 216.133
+   }
+   {
+    coords -250.786 -36.61 38.406
+   }
+   {
+    coords 53.552 2.539 -74.468
+   }
+  }
+  $grp GenericEntity : "{A38CBA2203AA3B0F}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiGroupPatrol.et" {
+   {
+    coords -295.428 -33.678 -66.615
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 227.963 29.868 66.503
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 131.579 7.985 -1.33
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 203.673 23.354 176.748
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 366.764 40.891 99.193
+     }
+    }
+   }
+   {
+    coords 147.821 5.591 -331.697
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -82.344 3.801 383.572
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -243.757 1.715 486.03
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -146.249 7.042 447.992
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -217.366 6.749 328.906
+     }
+    }
+   }
+   {
+    coords -174.35 -37.83 -152.494
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 136.35 35.004 117.142
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 199.651 39.407 45.391
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 109.301 32.375 148.525
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 202.008 41.59 179.415
+     }
+    }
+   }
+   {
+    coords 382.564 23.826 -95.829
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -284.295 -15.231 116.023
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -330.964 -16.223 119.203
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -393.481 -22.902 49.759
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -369.275 -9.144 176.997
+     }
+    }
+   }
+  }
+  $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
+   Lamentin1 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{86150A271CDB1308}Prefabs/Props/LamentinCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -28.481 5.554 90.754
+   }
+   Lamentin2 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{86150A271CDB1308}Prefabs/Props/LamentinCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -107.806 -0.867 35.869
+   }
+   Lamentin3 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{86150A271CDB1308}Prefabs/Props/LamentinCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -112.299 -8.421 112.043
+   }
+   Lamentin4 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{86150A271CDB1308}Prefabs/Props/LamentinCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -47.245 1.223 101.697
+   }
+  }
+ }
+}

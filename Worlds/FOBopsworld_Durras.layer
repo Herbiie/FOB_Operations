@@ -1,0 +1,161 @@
+FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+ coords 8830.484 94.882 2724.229
+ {
+  $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
+   {
+    coords -57.047 9.476 -102.565
+   }
+   {
+    coords -67.119 6.261 107.13
+   }
+   {
+    coords -21.451 4.343 105.386
+   }
+   {
+    coords -35.073 0.409 31.826
+   }
+   {
+    coords 41.078 -0.813 -49.838
+   }
+   {
+    coords 82.022 1.164 77.153
+   }
+   {
+    coords -52.495 9.174 180.492
+   }
+   {
+    coords 24.433 -0.004 0.444
+   }
+  }
+  $grp GenericEntity : "{A38CBA2203AA3B0F}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiGroupPatrol.et" {
+   {
+    coords -284.379 52.576 3.745
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 224.375 -45.683 -45.129
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 248.772 -52.418 -76.384
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 294.846 -49.716 -34.242
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 234.639 -50.735 125.022
+     }
+    }
+   }
+   {
+    coords 205.264 38.902 203.251
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -209.535 -39.085 -189.068
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -209.191 -36.86 -222.204
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -234.285 -40.63 -131.975
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -121.356 -38.178 -165.785
+     }
+    }
+   }
+   {
+    coords 56.816 35.899 319.754
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -74.94 -33.903 -248.512
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -129.749 -28.037 -164.492
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 14.518 -38.677 -285.55
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -19.661 -36.28 -408.193
+     }
+    }
+   }
+   {
+    coords -37.158 20.124 -291.074
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 17.028 -18.664 354.75
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 10.796 -16.587 206.812
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 36.682 -17.137 291.644
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -13.054 -16.029 423.305
+     }
+    }
+   }
+  }
+  $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
+   Durras1 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{A9F6654CF2003BA0}Prefabs/Props/DurrasCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -72.94 7.301 -115.772
+   }
+   Durras2 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{A9F6654CF2003BA0}Prefabs/Props/DurrasCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -20.986 7.893 20.331
+   }
+   Durras3 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{A9F6654CF2003BA0}Prefabs/Props/DurrasCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 41.489 -0.416 -60.913
+   }
+  }
+ }
+}

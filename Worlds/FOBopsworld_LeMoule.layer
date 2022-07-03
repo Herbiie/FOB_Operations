@@ -1,0 +1,186 @@
+FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+ coords 2619.095 91.754 5372.069
+ m_sCrateSpawners {
+  "LeMoule1" "LeMoule2" "LeMoule3"
+ }
+ m_sTaskName "LeMouleTask"
+ {
+  $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
+   {
+    coords -9.174 -2.093 -40.428
+   }
+   {
+    coords 43.364 2.622 36.708
+   }
+   {
+    coords -101.493 16.285 178.672
+   }
+   {
+    coords -32.234 10.183 114.73
+   }
+   {
+    coords -53.572 1.639 29.594
+   }
+   {
+    coords -33.295 14.079 186.472
+   }
+   {
+    coords -1.375 4.96 70.175
+   }
+   {
+    coords 7.49 3.978 5.884
+   }
+  }
+  $grp GenericEntity : "{A38CBA2203AA3B0F}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiGroupPatrol.et" {
+   {
+    coords 39.777 20.513 257.821
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 8.904 -19.628 -275.297
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -115.888 -1.048 -36.927
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 20.458 -16.995 -288.192
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 5.636 -9.03 -152.712
+     }
+    }
+   }
+   {
+    coords -238.679 24.33 129.765
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 203.14 -18.414 -61.492
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 138.709 -10.538 1.521
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 199.218 -27.718 -133.569
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 327.566 -17.636 -85.087
+     }
+    }
+   }
+   {
+    coords 5.541 7.415 -259.71
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -21.279 -7.975 261.297
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 29.819 -2.869 253.399
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -77.752 -6.268 258.802
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -30.952 -2.337 309.001
+     }
+    }
+   }
+   {
+    coords 119.049 24.687 -202.85
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -147.607 -25.443 205.94
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -74.661 -12.326 185.525
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -193.893 -16.244 188.014
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -158.166 -4.502 276.738
+     }
+    }
+   }
+   {
+    coords -109.937 -9.311 -197.747
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 112.864 36.871 198.483
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 36.89 9.535 180.039
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 122.698 10.475 200.248
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 40.889 26.175 359.285
+     }
+    }
+   }
+  }
+  $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
+   LeMoule1 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{519E72A0CBFA2D97}Prefabs/Props/LeMouleCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 22.888 11.893 145.987
+   }
+   LeMoule2 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{519E72A0CBFA2D97}Prefabs/Props/LeMouleCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 4.962 4.345 60.828
+   }
+   LeMoule3 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{519E72A0CBFA2D97}Prefabs/Props/LeMouleCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -9.844 -1.174 -28.232
+   }
+  }
+ }
+}

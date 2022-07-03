@@ -1,0 +1,217 @@
+FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+ coords 5127.969 14.042 3973.61
+ SphereRadius 700
+ m_sCrateSpawners {
+  "Morton1" "Morton2" "Morton3" "Morton4" "Morton5"
+ }
+ m_sTaskName "MortonTask"
+ {
+  $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
+   {
+    coords -116.757 6.01 -11.759
+   }
+   {
+    coords -5.29 0.8 95.662
+   }
+   {
+    coords 67.712 -2.779 -26.884
+   }
+   {
+    coords -138.205 -11.854 -108.885
+   }
+   {
+    coords -141.241 2.761 56.162
+   }
+   {
+    coords -272.355 -1.77 -3.941
+   }
+   {
+    coords -32.249 -0.237 -44.546
+   }
+   {
+    coords 66.43 2.307 93.145
+   }
+   {
+    coords -305.83 -10.885 -356.22
+   }
+   {
+    coords 64.954 0.726 51.109
+   }
+   {
+    coords -63.716 0.814 29.661
+   }
+   {
+    coords -281.361 0.126 39.384
+   }
+   {
+    coords -13.262 3.332 121.214
+   }
+   {
+    coords 40.149 -0.056 -9.367
+   }
+   {
+    coords -122.311 5.018 87.442
+   }
+  }
+  $grp GenericEntity : "{A38CBA2203AA3B0F}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiGroupPatrol.et" {
+   {
+    coords -127.715 31.37 241.575
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 157.508 -32.036 -257.46
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -55.878 -32.155 -174.046
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 255.812 -32.932 -214.762
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 97.45 -30.59 -246.037
+     }
+    }
+   }
+   {
+    coords 378.201 16.104 4.143
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -348.915 -15.915 -5.354
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -353.497 -23.709 -86.371
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -352.602 15.776 108.123
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -478.258 -15.126 19.268
+     }
+    }
+   }
+   {
+    coords 52.416 56.153 291.094
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -65.448 -56.058 -296.941
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -102.808 -58.604 -294.153
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -29.607 -61.145 -297.046
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -26.967 -61.544 -361.654
+     }
+    }
+   }
+   {
+    coords 104.542 57.702 286.101
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -129.285 -57.295 -285.016
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -183.02 -74.155 -394.616
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -299.903 -62.706 -285.171
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -70.12 -57.142 -290.899
+     }
+    }
+   }
+  }
+  $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
+   Morton1 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{BF8AD7897CFE247E}Prefabs/Props/MortonCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -123.656 9.51 -8.813
+   }
+   Morton2 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{BF8AD7897CFE247E}Prefabs/Props/MortonCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -103.513 -11.433 -108.107
+    angleY 39
+   }
+   Morton3 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{BF8AD7897CFE247E}Prefabs/Props/MortonCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -123.982 9.511 -10.939
+    angleY 60.466
+   }
+   Morton4 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{BF8AD7897CFE247E}Prefabs/Props/MortonCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -115.743 3.78 62.84
+   }
+   Morton5 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{BF8AD7897CFE247E}Prefabs/Props/MortonCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -52.81 4.77 41.501
+   }
+  }
+ }
+}

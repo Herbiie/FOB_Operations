@@ -1,0 +1,118 @@
+FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+ coords 4117.63 35.133 7795.561
+ m_sCrateSpawners {
+  "Gravette1" "Gravette2" "Gravette3"
+ }
+ m_sTaskName "GravetteTask"
+ {
+  $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
+   {
+    coords 29.621 3.292 0.154
+   }
+   {
+    coords -61.439 -3.211 9.042
+   }
+   {
+    coords 7.713 4.187 -56.529
+   }
+   {
+    coords -157.107 -13.763 -54.661
+   }
+   {
+    coords 76.951 14.107 -169.447
+   }
+   {
+    coords 89.143 9.743 -21.474
+   }
+  }
+  $grp GenericEntity : "{A38CBA2203AA3B0F}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiGroupPatrol.et" {
+   {
+    coords 164.496 40.435 101.092
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -185.937 -42.219 -87.67
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -191.209 -42.188 -44.67
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -96.045 -37.144 -134.271
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -256.926 -45.432 -117.051
+     }
+    }
+   }
+   {
+    coords -235.553 -21.564 204.876
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 208.942 23.211 -232.193
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 123.56 14.467 -213.39
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 256.354 27.849 -107.228
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 331.131 33.989 -263.42
+     }
+    }
+   }
+  }
+  $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
+   Gravette1 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{40D58697E6FAE596}Prefabs/Props/GravetteCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 32.46 7.092 -8.564
+   }
+   Gravette2 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{40D58697E6FAE596}Prefabs/Props/GravetteCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -74.422 -2.593 61.414
+    angleY -20.921
+   }
+   Gravette3 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{40D58697E6FAE596}Prefabs/Props/GravetteCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 50.95 5.363 100.92
+   }
+  }
+ }
+}

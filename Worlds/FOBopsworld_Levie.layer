@@ -1,0 +1,174 @@
+FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+ coords 7450.89 137.303 4735.086
+ m_sCrateSpawners {
+  "Levie1" "Levie2" "Levie3"
+ }
+ m_sTaskName "LevieTask"
+ {
+  $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
+   {
+    coords -80.797 -1.16 -24.187
+   }
+   {
+    coords 15.475 2.117 -45.44
+   }
+   {
+    coords 34.152 -1.208 38.651
+   }
+   {
+    coords 116.616 3.133 -26.791
+   }
+   {
+    coords 79.167 10.393 -111.471
+   }
+   {
+    coords -44.903 -2.081 35.812
+   }
+   {
+    coords 48.188 4.225 -67.117
+   }
+   {
+    coords 58.656 0.924 -11.666
+   }
+   {
+    coords 13.22 0.003 1.364
+   }
+   {
+    coords 125.85 5.932 -54.293
+   }
+  }
+  $grp GenericEntity : "{A38CBA2203AA3B0F}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiGroupPatrol.et" {
+   {
+    coords -63.733 -10.39 145.4
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 100.928 11.474 -157.924
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 44.082 11.554 -145.875
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 156.846 19.123 -221.961
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 177.679 11.171 -132.799
+     }
+    }
+   }
+   {
+    coords -115.921 22.748 -185.981
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -4.181 -1.58 115.587
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -48.098 -27.09 190.156
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 175.69 -10.864 256.701
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 122.282 5.222 75.144
+     }
+    }
+   }
+   {
+    coords -81.232 -13.537 175.591
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 69.634 13.149 -171.924
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 5.428 12.613 -164.173
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 139.746 13.488 -164.854
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 116.91 15.809 -204.541
+     }
+    }
+   }
+   {
+    coords -74.848 5.2 -221.812
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 100.766 -3.984 200.667
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 49.515 0.128 144.322
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 155.278 -0.569 165.878
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 82.762 -4.037 212.507
+     }
+    }
+   }
+  }
+  $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
+   Levie1 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{B780C51F593F7D43}Prefabs/Props/LevieCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords -94.534 -0.893 -28.313
+    angleY 48.759
+   }
+   Levie2 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{B780C51F593F7D43}Prefabs/Props/LevieCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 89.124 0.738 20.508
+    angleY 96.845
+   }
+   Levie3 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{B780C51F593F7D43}Prefabs/Props/LevieCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 32.423 6.628 -81.797
+    angleY 48.759
+   }
+  }
+ }
+}

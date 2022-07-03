@@ -1,0 +1,66 @@
+SubScene {
+ Parent "worlds/Eden/Eden.ent"
+}
+Layer Init {
+ Index 0
+}
+Layer FOB {
+ Index 1
+}
+Layer Chotain {
+ Index 2
+}
+Layer EntreDeux {
+ Index 3
+}
+Layer Montignac {
+ Index 4
+}
+Layer Provins {
+ Index 5
+}
+Layer Laruns {
+ Index 6
+}
+Layer Levie {
+ Index 7
+}
+Layer Figari {
+ Index 8
+}
+Layer Morton {
+ Index 9
+}
+Layer LeMoule {
+ Index 10
+}
+Layer Lamentin {
+ Index 11
+}
+Layer Villeneuf {
+ Index 12
+}
+Layer Gravette {
+ Index 13
+}
+Layer Tyrone {
+ Index 14
+}
+Layer Meaux {
+ Index 15
+}
+Layer StPhillipe {
+ Index 16
+}
+Layer Durras {
+ Index 17
+}
+Layer Vernon {
+ Index 18
+}
+Layer StPierre {
+ Index 19
+}
+Layer Regina {
+ Index 20
+}

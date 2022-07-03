@@ -1,0 +1,198 @@
+FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+ coords 9703.849 12.117 1557.922
+ SphereRadius 700
+ m_sCrateSpawners {
+  "StPierre1" "StPierre2" "StPierre3" "StPierre4"
+ }
+ m_sTaskName "StPierreTask"
+ {
+  $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
+   {
+    coords -92.738 11.03 64.38
+   }
+   {
+    coords -64.34 8.173 -57.177
+   }
+   {
+    coords 94.596 -10.887 -22.631
+   }
+   {
+    coords 44.862 1.568 -98.427
+   }
+   {
+    coords 301.444 -2.133 0.552
+   }
+   {
+    coords 81.898 -1.258 60.296
+   }
+   {
+    coords -90.244 12.555 -93.974
+   }
+   {
+    coords -11.314 7.764 -137.25
+   }
+   {
+    coords -3.01 1.16 17.968
+   }
+   {
+    coords 177.251 -6.193 18.328
+   }
+   {
+    coords 107.215 -6.919 -149.235
+   }
+   {
+    coords -278.889 32.951 80.649
+   }
+   {
+    coords -144.144 11.816 -8.167
+   }
+   {
+    coords 4.746 10.356 164.895
+   }
+  }
+  $grp GenericEntity : "{A38CBA2203AA3B0F}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiGroupPatrol.et" {
+   {
+    coords -152.871 27.4 -128.033
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 155.537 -26.816 113.543
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 94.451 -26.238 170.473
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 179.568 -23.291 25.165
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 238.122 -32.608 135.913
+     }
+    }
+   }
+   {
+    coords 290.298 7.359 146.463
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -288.435 -7.339 -151.25
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -75.433 -18.622 -109.764
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -230.507 14.81 -44.256
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -256.003 -0.158 -300.055
+     }
+    }
+   }
+   {
+    coords 56.658 36.118 254.916
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 17.76 -38.106 -240.334
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -1.373 -39.592 -144.97
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 211.898 -50.44 -221.791
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -88.835 -22.227 -254.516
+     }
+    }
+   }
+   {
+    coords -30.873 55.882 -372.482
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 130.067 -59.017 388.441
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 29.346 -58.983 334.78
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 177.792 -57.549 430.893
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 325.182 -68.777 396.384
+     }
+    }
+   }
+  }
+  $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
+   StPierre1 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{08C7858FBA53E148}Prefabs/Props/StPierreCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 40.76 -4.568 19.221
+   }
+   StPierre2 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{08C7858FBA53E148}Prefabs/Props/StPierreCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 78.168 -10.623 -36.036
+   }
+   StPierre3 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{08C7858FBA53E148}Prefabs/Props/StPierreCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 296.312 -5.333 -4.752
+   }
+   StPierre4 {
+    components {
+     NO_SCR_EnvSpawnerComponent "{59889B968C41636F}" {
+      m_rnDefaultPrefabs {
+       CountSpawnsByOnlinePlayer "{5988C2496351ED35}" {
+        prefab {
+         "{08C7858FBA53E148}Prefabs/Props/StPierreCrate.et"
+        }
+       }
+      }
+     }
+    }
+    coords 87.66 -0.861 42.551
+   }
+  }
+ }
+}

@@ -1,0 +1,62 @@
+GenericEntity {
+ ID "59BAED3D012F1493"
+ components {
+  Hierarchy "{59BAED3D012F14EA}" {
+  }
+  NO_SCR_AISpawnerComponent "{59BAED3D012F14E0}" {
+   m_rSpawns {
+    CountSpawnsByOnlinePlayerWithManager "{59BAED3C886C2044}" {
+     prefab {
+      5
+     }
+    }
+    CountSpawnsByOnlinePlayerWithManager "{59BAED3C871487E1}" {
+     CountOfPlayers 5
+     prefab {
+      1
+     }
+    }
+    CountSpawnsByOnlinePlayerWithManager "{59BAED3C863B8986}" {
+     CountOfPlayers 10
+     prefab {
+      2 3
+     }
+    }
+    CountSpawnsByOnlinePlayerWithManager "{59BAED3C86F2B163}" {
+     CountOfPlayers 15
+     prefab {
+      4
+     }
+    }
+    CountSpawnsByOnlinePlayerWithManager "{59BAED3C86AD870A}" {
+     CountOfPlayers 20
+     prefab {
+      4 3 8
+     }
+    }
+   }
+   m_rnDefaultPrefabs {
+    CountSpawnsByOnlinePlayer "{59BAED3D012F14F8}" {
+     prefab {
+      "{84E5BBAB25EA23E5}Prefabs/Groups/BLUFOR/Group_US_FireTeam.et"
+     }
+    }
+   }
+  }
+  RplComponent "{59BAED3D012F14FD}" {
+  }
+ }
+ coords 7012.233 116.767 5976.78
+ {
+  SCR_DefendWaypoint : "{93291E72AC23930F}Prefabs/AI/Waypoints/AIWaypoint_Defend.et" {
+   ID "59BAED3D012F1496"
+   components {
+    Hierarchy "{59BAED3D012F14F0}" {
+    }
+    RplComponent "{59BAED3D012F14F2}" {
+    }
+   }
+   coords 0 0 0
+  }
+ }
+}
