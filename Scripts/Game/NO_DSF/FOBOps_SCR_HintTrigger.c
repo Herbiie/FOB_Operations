@@ -11,14 +11,7 @@ class FOBOps_SCR_HintTrigger : SCR_BaseTriggerEntity
 	
 	[Attribute("", UIWidgets.EditBox, "Name of the linked crate", category: "FOB Ops:")]
 	string m_sCrateName;	
-	
-	[RplProp()]
-	int newX = 0;
-	[RplProp()]
-	int newY = 0;
-	[RplProp()]
-	int newZ = 0;
-	
+		
 	ref array<EntityID> activeMarkers = new array<EntityID>();
 	
 	RplComponent m_pRplComponent;
@@ -84,20 +77,19 @@ class FOBOps_SCR_HintTrigger : SCR_BaseTriggerEntity
         //hintComponent.ShowCustomHint("krow ot smees sihT", "DEBUG", 10);
 		IEntity crateEntity = GetGame().GetWorld().FindEntityByName(m_sCrateName);
 		vector crateLoc = crateEntity.GetOrigin();
-		newX = Math.RandomInt(-150, 150)+crateLoc[0];
-		newY = crateLoc[1];
-		newZ = Math.RandomInt(-150, 150)+crateLoc[2];
+		int newX = Math.RandomInt(-150, 150)+crateLoc[0];
+		int newY = crateLoc[1];
+		int newZ = Math.RandomInt(-150, 150)+crateLoc[2];
 		
 		EntityID markerID = newMarker.GetID();
 		
-		Replication.BumpMe();
 		activeMarkers.Insert(markerID);
-		Rpc(SetLoc,markerID);
-		SetLoc(markerID);
+		Rpc(SetLoc,markerID,newX,newY,newZ,false);
+		SetLoc(markerID,newX,newY,newZ,false);
 	}
 	
 	[RplRpc(RplChannel.Reliable, RplRcver.Broadcast)]
-	protected void SetLoc(EntityID markerID)
+	protected void SetLoc(EntityID markerID, int newX, int newY, int newZ,bool isJIP)
 	{
 		
 		IEntity newMarker = GetGame().GetWorld().FindEntityByID(markerID);
@@ -108,8 +100,10 @@ class FOBOps_SCR_HintTrigger : SCR_BaseTriggerEntity
 		
 		if (m_MapItem.IsVisible()) return;
 		
-		SCR_HintManagerComponent hintComponent = SCR_HintManagerComponent.GetInstance();
-        hintComponent.ShowCustomHint("The cache is within 150m of the new marker!", "LOCATION HINT", 10);
+		if (!isJIP) {
+			SCR_HintManagerComponent hintComponent = SCR_HintManagerComponent.GetInstance();
+        	hintComponent.ShowCustomHint("The cache is within 150m of the new marker!", "LOCATION HINT", 10);
+		};
 		
 		
 		vector newLoc = Vector(newX,newY,newZ);
@@ -138,8 +132,40 @@ class FOBOps_SCR_HintTrigger : SCR_BaseTriggerEntity
 		if(!m_pRplComponent) return;
 		if(!m_pRplComponent.IsMaster()) return;
 		foreach (EntityID thisMarker : activeMarkers) {
-			Rpc(SetLoc,thisMarker);
+			IEntity newMarker = GetGame().GetWorld().FindEntityByID(thisMarker);
+			if (!newMarker) return;
+			vector markerLoc = newMarker.GetOrigin();
+			int newX = markerLoc[0];
+			int newY = markerLoc[1];
+			int newZ = markerLoc[2];
+			Rpc(SetLoc,thisMarker,newX,newY,newZ,true);
 		}
+	}
+	
+	external void deactiveMarkers()
+	{
+		if(!m_pRplComponent) return;
+		if(!m_pRplComponent.IsMaster()) return;
+		SCR_HintManagerComponent hintComponent = SCR_HintManagerComponent.GetInstance();
+        hintComponent.ShowCustomHint("krow ot smees sihT", "DEBUG", 10);
+		array<EntityID> activeMarkersTemp = activeMarkers;
+		foreach (EntityID thisMarker : activeMarkersTemp) {
+			activeMarkers.Remove(activeMarkers.Find(thisMarker));
+			Rpc(switchOffMarker,thisMarker);
+			switchOffMarker(thisMarker);
+		}
+	}
+	
+	[RplRpc(RplChannel.Reliable, RplRcver.Broadcast)]
+	protected void switchOffMarker(EntityID thisMarker)
+	{
+		IEntity newMarker = GetGame().GetWorld().FindEntityByID(thisMarker);
+		if (!newMarker) return;
+		
+		SCR_MapDescriptorComponent mapDescriptorComponent = SCR_MapDescriptorComponent.Cast(newMarker.FindComponent(SCR_MapDescriptorComponent));
+		protected MapItem m_MapItem = mapDescriptorComponent.Item();
+		
+		m_MapItem.SetVisible(false);
 	}
 	
 }

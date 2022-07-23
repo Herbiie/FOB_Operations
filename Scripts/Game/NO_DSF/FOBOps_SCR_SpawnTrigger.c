@@ -34,22 +34,8 @@ class FOBOps_SCR_SpawnTrigger : NO_SCR_SpawnTrigger
 	{
 		isTriggerActive = false;
 		IEntity hintTriggerEntity = GetGame().GetWorld().FindEntityByName(m_sHintTrigger);
-		ref array<IEntity> hintchildren = new array<IEntity>();
-		GetAllChildren(hintTriggerEntity,hintchildren);
-		foreach (IEntity child : hintchildren)
-		{
-			SCR_MapDescriptorComponent mapDescriptorComponent = SCR_MapDescriptorComponent.Cast(child.FindComponent(SCR_MapDescriptorComponent));
-			
-			if (!mapDescriptorComponent) continue;
-			
-			protected MapItem m_MapItemTemp = mapDescriptorComponent.Item();
-			if (!m_MapItemTemp) continue;
-			
-			if (m_MapItemTemp.IsVisible())
-			{
-				m_MapItemTemp.SetVisible(false);
-			};
-		}
+		FOBOps_SCR_HintTrigger hintTrigger = FOBOps_SCR_HintTrigger.Cast(hintTriggerEntity);
+		hintTrigger.deactiveMarkers();
 		super.OnDeactivate(ent);
 	}
 
