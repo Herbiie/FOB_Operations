@@ -1,9 +1,10 @@
-FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+FOBOps_SCR_SpawnTrigger FigariTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
  coords 5271.958 63.965 5351.688
  m_sCrateSpawners {
   "Figari1" "Figari2" "Figari3" "Figari4"
  }
  m_sTaskName "FigariTask"
+ m_sHintTrigger "FigariHintTrigger"
  {
   $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
    {
@@ -122,6 +123,48 @@ FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrig
      }
     }
    }
+   {
+    coords 93.368 9.65 486.54
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -187.594 -16.804 -421.922
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -127.582 -4.902 -592.132
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -61.146 -12.113 -469.443
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -222.835 -21.225 -282.982
+     }
+    }
+   }
+   {
+    coords -172.57 -3.56 555.571
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 132.613 -4.707 -479.149
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 266.27 7.141 -480.143
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 131.135 7.658 -647.9
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 109.526 -7.529 -411.998
+     }
+    }
+   }
   }
   $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
    Figari1 {
@@ -183,4 +226,9 @@ FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrig
    }
   }
  }
+}
+FOBOps_SCR_HintTrigger FigariHintTrigger : "{F228833A1E59437D}Prefabs/Markers/FOBOps_HintTriggerPrefab.et" {
+ coords 5272.251 63.949 5351.987
+ m_sTriggerName "FigariTrigger"
+ m_sCrateName "FigariCrate"
 }

@@ -1,9 +1,10 @@
-FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+FOBOps_SCR_SpawnTrigger EntreDeuxTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
  coords 5751.085 218.096 7070.362
  m_sCrateSpawners {
   "EntreDeux1" "EntreDeux2" "EntreDeux3"
  }
  m_sTaskName "EntreDeuxTask"
+ m_sHintTrigger "EntreDeuxHintTrigger"
  {
   $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
    {
@@ -71,6 +72,48 @@ FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrig
      }
     }
    }
+   {
+    coords 158.078 9.21 141.965
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -132.21 -6.646 -79.535
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -109.377 -13.788 -157.072
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -184.641 -7.895 -140.102
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -146.587 -5.397 -62.474
+     }
+    }
+   }
+   {
+    coords 19.419 9.489 253.656
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -38.483 -6.666 -245.673
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -6.363 -12.075 -309.403
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -5.248 -9.479 -260.566
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -68.786 -6.622 -159.723
+     }
+    }
+   }
   }
   $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
    EntreDeux1 {
@@ -120,4 +163,9 @@ FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrig
    }
   }
  }
+}
+FOBOps_SCR_HintTrigger EntreDeuxHintTrigger : "{F228833A1E59437D}Prefabs/Markers/FOBOps_HintTriggerPrefab.et" {
+ coords 5751.085 218.096 7070.362
+ m_sTriggerName "EntreDeuxTrigger"
+ m_sCrateName "EntreDeuxCrate"
 }

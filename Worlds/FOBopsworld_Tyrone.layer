@@ -1,9 +1,10 @@
-FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+FOBOps_SCR_SpawnTrigger TyroneTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
  coords 4926.122 36.077 9094.813
  m_sCrateSpawners {
   "Tyrone1" "Tyrone2" "Tyrone3"
  }
  m_sTaskName "TyroneTask"
+ m_sHintTrigger "TyroneHintTrigger"
  {
   $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
    {
@@ -71,6 +72,44 @@ FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrig
      }
     }
    }
+   {
+    coords -183.721 -8.806 36.607
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 200.786 9.772 -54.22
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 215.003 15.916 -107.231
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 195.15 9.764 -5.824
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 130.256 12.789 -103.675
+     }
+    }
+   }
+   {
+    coords 105.35 -1.715 236.677
+    {
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -112.881 1.304 -241.109
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -98.648 7.825 -304.915
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -44.993 2.446 -220.359
+     }
+    }
+   }
   }
   $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
    Tyrone1 {
@@ -118,4 +157,9 @@ FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrig
    }
   }
  }
+}
+FOBOps_SCR_HintTrigger TyroneHintTrigger : "{F228833A1E59437D}Prefabs/Markers/FOBOps_HintTriggerPrefab.et" {
+ coords 4926.122 36.077 9094.813
+ m_sTriggerName "TyroneTrigger"
+ m_sCrateName "TyroneCrate"
 }

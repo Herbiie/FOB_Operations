@@ -1,10 +1,11 @@
-FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+FOBOps_SCR_SpawnTrigger MontignacTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
  coords 4776.034 164.486 7093.218
  SphereRadius 750
  m_sCrateSpawners {
   "Montignac1" "Montignac2" "Montignac3" "Montignac4" "Montignac5"
  }
  m_sTaskName "MontignacTask"
+ m_sHintTrigger "MontignacHintTrigger"
  {
   $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
    {
@@ -162,6 +163,48 @@ FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrig
      }
     }
    }
+   {
+    coords -334.152 -42.012 260.565
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 143.82 33.78 -354.848
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 48.461 33.495 -508.214
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 385.939 46.77 -410.537
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 196.427 32.056 -138.377
+     }
+    }
+   }
+   {
+    coords 226.79 -49.633 -458.186
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -200.556 53.425 384.731
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -246.296 44.299 470.099
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -374.439 42.458 279.366
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -187.684 55.129 346.045
+     }
+    }
+   }
   }
   $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
    Montignac1 {
@@ -238,4 +281,10 @@ FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrig
    }
   }
  }
+}
+FOBOps_SCR_HintTrigger MontignacHintTrigger : "{F228833A1E59437D}Prefabs/Markers/FOBOps_HintTriggerPrefab.et" {
+ coords 4776.034 164.486 7093.218
+ SphereRadius 750
+ m_sTriggerName "MontignacTrigger"
+ m_sCrateName "MontignacCrate"
 }

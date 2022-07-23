@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{5ECD294CC7D8D55D}Prefabs/Characters/Factions/BLUFOR/US_Army/FOBOps_Character_US_MG.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

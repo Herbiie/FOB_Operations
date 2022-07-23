@@ -1,0 +1,22 @@
+FOBOps_SCR_HintTrigger : "{7048D9DC05F97AEC}Prefabs/NO_DSF/FOBOps_HintTrigger.et" {
+ ID "59D4BC498ECAD336"
+ coords 7066.943 118.873 6029.417
+ m_sTriggerName "ChotainTrigger"
+ m_sCrateName "ChotainCrate"
+ {
+  $grp GenericEntity : "{A0F8EF790547C2F9}Prefabs/Markers/FOBOps_MarkerEntity.et" {
+   {
+    ID "59D52A72AAAC7BAA"
+    coords -5.744 -0.285 -8.235
+   }
+   {
+    ID "59D52A72AAAC7BAB"
+    coords -2.491 -0.29 -7.524
+   }
+   {
+    ID "59D52A72AAADA160"
+    coords -7.561 -0.206 -6.417
+   }
+  }
+ }
+}

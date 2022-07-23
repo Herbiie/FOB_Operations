@@ -1,0 +1,14 @@
+FOBOps_SCR_HintTrigger {
+ ID "59D4BC498ECAD336"
+ components {
+  Hierarchy "{59D4BC486FE0C666}" {
+  }
+  RplComponent "{59D4BC4872E03291}" {
+  }
+ }
+ coords 0 0 0
+ TriggerShapeType Sphere
+ SphereRadius 500
+ TriggerActivationType "All changes"
+ PeriodicQueries 1
+}

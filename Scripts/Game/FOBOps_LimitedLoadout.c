@@ -7,28 +7,34 @@ class FOBOps_LimitedLoadout : SCR_FactionPlayerLoadout
 	
 	override bool IsLoadoutAvailable(int playerId)
 	{
-		CountLoadouts();
-		return true;
+		return CountLoadouts();
 	}
 	
 	//------------------------------------------------------------------------------------------------
 	override bool IsLoadoutAvailableClient()
 	{
-		CountLoadouts();
-		return true;
+		return CountLoadouts();
 	}
 	
-	protected void CountLoadouts()
+	protected bool CountLoadouts()
 	{
+		// Count the loadouts
 		int loadoutCount = 0;
 		array<int> PlayersArray = new array<int>();
 		GetGame().GetPlayerManager().GetPlayers(PlayersArray);
+		
 		foreach(int PlayerId : PlayersArray )
 		{
+			if (!(PlayerId>0)) continue;
 			IEntity PlayerEntity = GetGame().GetPlayerManager().GetPlayerControlledEntity(PlayerId);
-			SCR_ChimeraCharacter PlayerCharacter = SCR_ChimeraCharacter.Cast(PlayerEntity);
-			Print(m_sLoadoutResource);
-			Print(PlayerCharacter);
+			if (!PlayerEntity) continue;
+			BaseContainer PlayerPrefab = PlayerEntity.GetPrefabData().GetPrefab();
+			if (!PlayerPrefab) continue;
+			ResourceName PlayerResource = SCR_BaseContainerTools.GetPrefabResourceName(PlayerPrefab);
+			if (PlayerResource==m_sLoadoutResource) ++loadoutCount;
 		}
+		
+		return (m_inumberLoadout>loadoutCount);
 	}
+	
 }

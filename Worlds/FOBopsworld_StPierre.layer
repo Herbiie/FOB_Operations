@@ -1,10 +1,11 @@
-FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+FOBOps_SCR_SpawnTrigger StPierreTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
  coords 9703.849 12.117 1557.922
  SphereRadius 700
  m_sCrateSpawners {
   "StPierre1" "StPierre2" "StPierre3" "StPierre4"
  }
  m_sTaskName "StPierreTask"
+ m_sHintTrigger "StPierreHintTrigger"
  {
   $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
    {
@@ -135,6 +136,48 @@ FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrig
      }
     }
    }
+   {
+    coords -14.471 28.205 -282.966
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 45.659 -29.882 246.841
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 230.198 -34.854 335.53
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -99.283 -11.698 294.657
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 51.706 -20.978 98.432
+     }
+    }
+   }
+   {
+    coords 219.93 21.117 214.08
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -114.623 -24.695 -195.25
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -216.013 -16.518 -69.081
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -227.97 -24.376 -235.554
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -41.671 -24.955 -108.942
+     }
+    }
+   }
   }
   $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
    StPierre1 {
@@ -195,4 +238,10 @@ FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrig
    }
   }
  }
+}
+FOBOps_SCR_HintTrigger StPierreHintTrigger : "{F228833A1E59437D}Prefabs/Markers/FOBOps_HintTriggerPrefab.et" {
+ coords 9703.849 12.117 1557.922
+ SphereRadius 700
+ m_sTriggerName "StPierreTrigger"
+ m_sCrateName "StPierreCrate"
 }

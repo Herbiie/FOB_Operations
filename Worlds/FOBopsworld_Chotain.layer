@@ -1,9 +1,28 @@
-FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+FOBOps_SCR_HintTrigger ChotainHintTrigger : "{7048D9DC05F97AEC}Prefabs/NO_DSF/FOBOps_HintTrigger.et" {
+ coords 7066.943 118.873 6029.417
+ m_sTriggerName "ChotainTrigger"
+ m_sCrateName "ChotainCrate"
+ {
+  $grp GenericEntity : "{A0F8EF790547C2F9}Prefabs/Markers/FOBOps_MarkerEntity.et" {
+   {
+    coords -2.491 -0.29 -7.524
+   }
+   {
+    coords -5.744 -0.285 -8.235
+   }
+   {
+    coords -7.561 -0.206 -6.417
+   }
+  }
+ }
+}
+FOBOps_SCR_SpawnTrigger ChotainTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
  coords 7066.943 118.873 6029.418
  m_sCrateSpawners {
   "ChotainCrateSpawn1" "ChotainCrateSpawn2" "ChotainCrateSpawn3"
  }
  m_sTaskName "ChotainTask"
+ m_sHintTrigger "ChotainHintTrigger"
  {
   $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
    {
@@ -108,6 +127,48 @@ FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrig
      SCR_AIWaypoint {
       ID "59BAED3D3830D54F"
       coords -415.342 70.734 -168.736
+     }
+    }
+   }
+   {
+    coords 195.46 -49.794 276.873
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -160.423 50.229 -229.242
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -120.927 47.631 -198.416
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -198.961 50.653 -276.785
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -88.314 45.826 -266.944
+     }
+    }
+   }
+   {
+    coords -337.509 -6.418 -134.144
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 276.859 4.096 78.67
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 330.097 1.872 39.527
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 342.589 5.763 142.799
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 220.815 1.893 47.534
      }
     }
    }

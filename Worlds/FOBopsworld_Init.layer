@@ -31,8 +31,8 @@ SCR_BaseGameMode NO_CoopSetup1 : "{AAD8DA66980A1D77}Prefabs/MP/NO_CoopSetup.et" 
    m_Info SCR_UIInfo "{597B2CEE8BC08D5A}" {
     Description "SITUATION - After removing the USSR from Everon, the US has remained in place to ensure NATO can continue to use Everon as a naval base. The FIA now see the US as another occupying force and have launched a new insurgency against the US. The FIA are reliant on a system of weapons caches, with one in each town.<br/>"\
     "MISSION - SECURE Everon in order to allow NATO to continue to use it as a naval base.<br/>"\
-    "EXECUTION - Destroy each weapons cache for every town in order to secure the island.<br/>"\
-    "SERVICE SUPPORT - US troops operate out of FOB Nichols, which has 3x armed humvees, 1x truck and 1x mobile spawn point. There is also a weapons arsenal and vehicle maintenance point at the FOB.<br/>"\
+    "EXECUTION - Each town has 1x weapons crate that can be destroyed by using an action on the crate to place a satchel. If you 'activate' a town by walking into it and leave by either moving out of it or by having no alive friendlies in the town, the crate will move to a new location. Enemies in the towns will respawn, with the number depending on how many players are connected.<br/>"\
+    "SERVICE SUPPORT - US troops operate out of FOB Nichols, which has 3x armed humvees, 1x truck and 1x mobile spawn point command truck. There is also a weapons arsenal at the FOB with weapons and equipment. The mobile spawn point can be deployed by using an action on the vehicle. When deployed, the vehicle cannot move but acts as a spawn point. Vehicles (including the MSP) will respawn if destroyed.<br/>"\
     "COMMAND AND SIGNALS - All troops should be equipped with radios."
    }
    m_aGameModeHints {
@@ -61,7 +61,9 @@ SCR_BaseGameMode NO_CoopSetup1 : "{AAD8DA66980A1D77}Prefabs/MP/NO_CoopSetup.et" 
    components {
     NavmeshWorldComponent "{5584F30E67F617AD}" {
      NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
-      NavmeshFile "{AD5F99CD7C59D5E0}worlds/GameMaster/Navmeshes/GM_Eden.nmn"
+      NavmeshFilesConfig BaseNavmeshFilesConfig "{59EEC33181C4D314}" {
+       NavmeshFile "{A07353FE17EB2C49}worlds/MP/Navmeshes/CTI_Campaign_Eden.nmn"
+      }
      }
     }
    }
@@ -69,13 +71,74 @@ SCR_BaseGameMode NO_CoopSetup1 : "{AAD8DA66980A1D77}Prefabs/MP/NO_CoopSetup.et" 
   SCR_LoadoutManager {
    ID "598B45657FF3F701"
    m_aPlayerLoadouts {
+    SCR_PlayerArsenalLoadout "{59D34515E3EF226C}" {
+     m_sLoadoutName "Saved Loadout"
+     m_sLoadoutResource "{2F912ED6E399FF47}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Unarmed.et"
+     m_sLoadoutImage "{2B0877799B9B6C66}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_Rifleman.edds"
+     m_sAffiliatedFaction "US"
+    }
     SCR_FactionPlayerLoadout "{596EB2A326D1EE2D}" {
      m_sLoadoutName "Rifleman"
+     m_sLoadoutResource "{F0C1DDDDFA390296}Prefabs/Characters/Factions/BLUFOR/US_Army/FOBOps_Character_US_Rifleman.et"
     }
-    SCR_PlayerArsenalLoadout "{59BB59D674F893D8}" {
-     m_sLoadoutName "Saved Loadout"
-     m_sLoadoutResource "{26A9756790131354}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et"
-     m_sLoadoutImage "{2B0877799B9B6C66}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_Rifleman.edds"
+    SCR_FactionPlayerLoadout "{59D3451BC2A79393}" {
+     m_sLoadoutName "Automatic Rifleman"
+     m_sLoadoutResource "{0CDAF756A997C1BE}Prefabs/Characters/Factions/BLUFOR/US_Army/FOBOps_Character_US_AR.et"
+     m_sLoadoutImage "{43EA535E240F0B17}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_AR.edds"
+     m_sAffiliatedFaction "US"
+    }
+    SCR_FactionPlayerLoadout "{59D3451B1CF2E763}" {
+     m_sLoadoutName "Grenadier"
+     m_sLoadoutResource "{010F89775E20A894}Prefabs/Characters/Factions/BLUFOR/US_Army/FOBOps_Character_US_GL.et"
+     m_sLoadoutImage "{99D02888988DED59}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_GL.edds"
+     m_sAffiliatedFaction "US"
+    }
+    SCR_FactionPlayerLoadout "{59D3451B0658D062}" {
+     m_sLoadoutName "Medic"
+     m_sLoadoutResource "{F8E2EE960D7B96F5}Prefabs/Characters/Factions/BLUFOR/US_Army/FOBOps_Character_US_Medic.et"
+     m_sLoadoutImage "{8D3E9B959DCE2B60}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_Medic.edds"
+     m_sAffiliatedFaction "US"
+    }
+    SCR_FactionPlayerLoadout "{59D3451B316A509B}" {
+     m_sLoadoutName "RTO"
+     m_sLoadoutResource "{C65DAF1AE1686B55}Prefabs/Characters/Factions/BLUFOR/US_Army/FOBOps_Character_US_RTO.et"
+     m_sLoadoutImage "{099045EADC8BD971}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_RTO.edds"
+     m_sAffiliatedFaction "US"
+    }
+    SCR_FactionPlayerLoadout "{59D3451B209AD372}" {
+     m_sLoadoutName "Team Leader"
+     m_sLoadoutResource "{6695FC18FD95D96E}Prefabs/Characters/Factions/BLUFOR/US_Army/FOBOps_Character_US_TL.et"
+     m_sLoadoutImage "{34E9DBD5693E1B7F}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_TL.edds"
+     m_sAffiliatedFaction "US"
+    }
+    SCR_FactionPlayerLoadout "{59D3451B4DFF3989}" {
+     m_sLoadoutName "Machinegunner"
+     m_sLoadoutResource "{5ECD294CC7D8D55D}Prefabs/Characters/Factions/BLUFOR/US_Army/FOBOps_Character_US_MG.et"
+     m_sLoadoutImage "{D68798DF09F5BE8E}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_MG.edds"
+     m_sAffiliatedFaction "US"
+    }
+    SCR_FactionPlayerLoadout "{59D3451B7A778710}" {
+     m_sLoadoutName "MG Ammo Bearer"
+     m_sLoadoutResource "{9079969EED438FD3}Prefabs/Characters/Factions/BLUFOR/US_Army/FOBOps_Character_US_AMG.et"
+     m_sLoadoutImage "{2FC02D4957E7A86E}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_AMG.edds"
+     m_sAffiliatedFaction "US"
+    }
+    SCR_FactionPlayerLoadout "{59D3451B63DA3F85}" {
+     m_sLoadoutName "Squad Leader"
+     m_sLoadoutResource "{615206499B1363AD}Prefabs/Characters/Factions/BLUFOR/US_Army/FOBOps_Character_US_SL.et"
+     m_sLoadoutImage "{E66FEBD3F049BF7D}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_SL.edds"
+     m_sAffiliatedFaction "US"
+    }
+    SCR_FactionPlayerLoadout "{59D34515C66A81CA}" {
+     m_sLoadoutName "Sniper"
+     m_sLoadoutResource "{223B403063414646}Prefabs/Characters/Factions/BLUFOR/US_Army/FOBOps_Character_US_Sniper.et"
+     m_sLoadoutImage "{13AC78F098028758}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_Sniper.edds"
+     m_sAffiliatedFaction "US"
+    }
+    SCR_FactionPlayerLoadout "{59D34515F53C91B7}" {
+     m_sLoadoutName "Spotter"
+     m_sLoadoutResource "{14B5ED2DDB575D58}Prefabs/Characters/Factions/BLUFOR/US_Army/FOBOps_Character_US_Spotter.et"
+     m_sLoadoutImage "{0F7FF26A2EA503A0}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_Spotter.edds"
      m_sAffiliatedFaction "US"
     }
    }
@@ -95,6 +158,8 @@ NO_SCR_TaskManager : "{2DF590FC1A531940}Prefabs/NO_DTF/TaskManager.et" {
    m_sName "Secure Everon"
    m_sDescription "Secure Everon by securing all of the towns"
    m_faction "US"
+   m_bCreateOnStart 1
+   m_bAssignToFactionOnStart 0
    m_bEnableGameOverOnSuccess 1
    {
     $grp NO_SCR_EditorTask : "{82EC0462F27F5221}Prefabs/NO_DTF/SingleTask.et" {
@@ -103,133 +168,133 @@ NO_SCR_TaskManager : "{2DF590FC1A531940}Prefabs/NO_DTF/TaskManager.et" {
       m_sName "Secure Chotain"
       m_sDescription "Secure Chotain by destroying the weapons cache"
       m_faction "US"
-      m_bAssignToFactionOnStart 1
+      m_bCreateOnStart 1
      }
      EntreDeuxTask {
       coords -714.656 56.182 587.864
       m_sName "Secure Entre Deux"
       m_sDescription "Secure Entre Deux by destroying the weapons cache"
       m_faction "US"
-      m_bAssignToFactionOnStart 1
+      m_bCreateOnStart 1
      }
      MontignacTask {
       coords -1686.996 2.991 603.15
       m_sName "Secure Montignac"
       m_sDescription "Secure Montignac by destroying the weapons cache"
       m_faction "US"
-      m_bAssignToFactionOnStart 1
+      m_bCreateOnStart 1
      }
      ProvinsTask {
       coords -959.399 -66.248 -396.962
       m_sName "Secure Provins"
       m_sDescription "Secure Provins by destroying the weapons cache"
       m_faction "US"
-      m_bAssignToFactionOnStart 1
+      m_bCreateOnStart 1
      }
      LarunsTask {
       coords 1112.506 -79.876 -959.097
       m_sName "Secure Laruns"
       m_sDescription "Secure Laruns by destroying the weapons cache"
       m_faction "US"
-      m_bAssignToFactionOnStart 1
+      m_bCreateOnStart 1
      }
      LevieTask {
       coords 983.389 -24.665 -1747.257
       m_sName "Secure Levie"
       m_sDescription "Secure Levie by destroying the weapons crate"
       m_faction "US"
-      m_bAssignToFactionOnStart 1
+      m_bCreateOnStart 1
      }
      FigariTask {
       coords -1194.632 -98.07 -1128.436
       m_sName "Secure Figari"
       m_sDescription "Secure Figari by destroying the weapons crate"
       m_faction "US"
-      m_bAssignToFactionOnStart 1
+      m_bCreateOnStart 1
      }
      MortonTask {
       coords -1337.195 -147.869 -2507.355
       m_sName "Secure Morton"
       m_sDescription "Secure Morton by destroying the weapons cache"
       m_faction "US"
-      m_bAssignToFactionOnStart 1
+      m_bCreateOnStart 1
      }
      LeMouleTask {
       coords -3845.189 -70.108 -1110.378
       m_sName "Secure Le Moule"
       m_sDescription "Secure Le Moule by destroying the weapons cache"
       m_faction "US"
-      m_bAssignToFactionOnStart 1
+      m_bCreateOnStart 1
      }
      LamentinTask {
       coords -5135.863 -121.349 -510.197
       m_sName "Secure Lamentin"
       m_sDescription "Secure Lamentin by destroying the weapons cache there"
       m_faction "US"
-      m_bAssignToFactionOnStart 1
+      m_bCreateOnStart 1
      }
      VilleneufTask {
       coords -3624.739 -75.499 -143.012
       m_sName "Secure Villeneuf"
       m_sDescription "Secure Villeneuf by destroying the weapons cache there"
       m_faction "US"
-      m_bAssignToFactionOnStart 1
+      m_bCreateOnStart 1
      }
      GravetteTask {
       coords -2346.021 -126.698 1314.267
       m_sName "Secure Gravette"
       m_sDescription "Secure Gravette by destroying the weapons cache"
       m_faction "US"
-      m_bAssignToFactionOnStart 1
+      m_bCreateOnStart 1
      }
      TyroneTask {
       coords -1534.221 -125.838 2609.544
       m_sName "Secure Tyrone"
       m_sDescription "Secure Tyrone by destroying the weapons cache"
       m_faction "US"
-      m_bAssignToFactionOnStart 1
+      m_bCreateOnStart 1
      }
      MeauxTask {
       coords -1974.53 -147.157 3030.481
       m_sName "Secure Meaux"
       m_sDescription "Secure Meaux by destroying the weapons cache"
       m_faction "US"
-      m_bAssignToFactionOnStart 1
+      m_bCreateOnStart 1
      }
      StPhillipeTask {
       coords -1954.572 -144.093 4292.584
       m_sName "Secure St Phillipe"
       m_sDescription "Secure St Phillipe by destroying the weapons cache"
       m_faction "US"
-      m_bAssignToFactionOnStart 1
+      m_bCreateOnStart 1
      }
      DurrasTask {
       coords 2365.844 -66.967 -3762.036
       m_sName "Secure Durras"
       m_sDescription "Secure Durras by destroying the weapons crate"
       m_faction "US"
-      m_bAssignToFactionOnStart 1
+      m_bCreateOnStart 1
      }
      VernonTask {
       coords 2813.616 -106.345 -4432.264
       m_sName "Secure Vernon"
       m_sDescription "Secure Vernon by destroying the weapons crate"
       m_faction "US"
-      m_bAssignToFactionOnStart 1
+      m_bCreateOnStart 1
      }
      StPierreTask {
       coords 3244.641 -150.028 -4922.352
       m_sName "Secure St Pierre"
       m_sDescription "Secure St Pierre by destroying the weapons cache"
       m_faction "US"
-      m_bAssignToFactionOnStart 1
+      m_bCreateOnStart 1
      }
      ReginaTask {
       coords 718.639 -24.463 -4148.31
       m_sName "Secure Regina"
       m_sDescription "Secure Regina by destroying the weapons cache"
       m_faction "US"
-      m_bAssignToFactionOnStart 1
+      m_bCreateOnStart 1
      }
     }
    }

@@ -1,9 +1,10 @@
-FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+FOBOps_SCR_SpawnTrigger LevieTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
  coords 7450.89 137.303 4735.086
  m_sCrateSpawners {
   "Levie1" "Levie2" "Levie3"
  }
  m_sTaskName "LevieTask"
+ m_sHintTrigger "LevieHintTrigger"
  {
   $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
    {
@@ -122,6 +123,48 @@ FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrig
      }
     }
    }
+   {
+    coords -19.591 -11.481 213.372
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 78.203 14.673 -254.688
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 14.632 15.223 -296.428
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 137.105 24.148 -323.403
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 25.186 11.179 -204.388
+     }
+    }
+   }
+   {
+    coords -74.983 5.154 -222.49
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 121.732 -2.855 192.137
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 28.772 -1.323 165.119
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 201.161 4.653 129.59
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 158.748 -4.045 235.961
+     }
+    }
+   }
   }
   $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
    Levie1 {
@@ -171,4 +214,9 @@ FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrig
    }
   }
  }
+}
+FOBOps_SCR_HintTrigger LevieHintTrigger : "{F228833A1E59437D}Prefabs/Markers/FOBOps_HintTriggerPrefab.et" {
+ coords 7450.89 137.303 4735.086
+ m_sTriggerName "LevieTrigger"
+ m_sCrateName "LevieCrate"
 }

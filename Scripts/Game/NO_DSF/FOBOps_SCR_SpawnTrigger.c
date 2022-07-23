@@ -14,14 +14,43 @@ class FOBOps_SCR_SpawnTrigger : NO_SCR_SpawnTrigger
 	[Attribute("", UIWidgets.EditBox, "Name of the linked task", category: "FOB Ops:")]
 	string m_sTaskName;	
 	
+	
+	[Attribute("", UIWidgets.EditBox, "Name of the linked hint trigger", category: "FOB Ops:")]
+	string m_sHintTrigger;	
+	
 	private RplComponent m_pRplComponent2;
+	bool isTriggerActive = false;
 	
 	override void OnActivate(IEntity ent)
 	{
+		isTriggerActive = true;
 		IEntity taskEntity = GetGame().GetWorld().FindEntityByName(m_sTaskName);
 		NO_SCR_EditorTask taskObject = NO_SCR_EditorTask.Cast(taskEntity);
 		if (!taskObject) return;
 		super.OnActivate(ent);
+	}
+	
+	override void OnDeactivate(IEntity ent)
+	{
+		isTriggerActive = false;
+		IEntity hintTriggerEntity = GetGame().GetWorld().FindEntityByName(m_sHintTrigger);
+		ref array<IEntity> hintchildren = new array<IEntity>();
+		GetAllChildren(hintTriggerEntity,hintchildren);
+		foreach (IEntity child : hintchildren)
+		{
+			SCR_MapDescriptorComponent mapDescriptorComponent = SCR_MapDescriptorComponent.Cast(child.FindComponent(SCR_MapDescriptorComponent));
+			
+			if (!mapDescriptorComponent) continue;
+			
+			protected MapItem m_MapItemTemp = mapDescriptorComponent.Item();
+			if (!m_MapItemTemp) continue;
+			
+			if (m_MapItemTemp.IsVisible())
+			{
+				m_MapItemTemp.SetVisible(false);
+			};
+		}
+		super.OnDeactivate(ent);
 	}
 
 	override void Spawn()
@@ -45,10 +74,29 @@ class FOBOps_SCR_SpawnTrigger : NO_SCR_SpawnTrigger
 			auto spawnerComponent = NO_SCR_EnvSpawnerComponent.Cast(spawnerEntity.FindComponent(NO_SCR_EnvSpawnerComponent));
 			childrenEnvSpawner.Remove(childrenEnvSpawner.Find(spawnerComponent));
 		}
-		
 		super.Spawn();
 
 	}
+	
+	external bool IsActive()
+	{
+		return isTriggerActive;
+	}
+	
+	//Thanks to narcoleptic marshmallow for his message on the arma discord: https://discord.com/channels/105462288051380224/976155351999201390/978395568453865622 
+	static void GetAllChildren(IEntity parent, notnull inout array<IEntity> allChildren)
+    {
+        if (!parent)
+            return;
+        
+        IEntity child = parent.GetChildren();
+        
+        while (child)
+        {
+            allChildren.Insert(child);
+            child = child.GetSibling();
+        }
+    }
 	
 	
 	/*void MoveCrate()
@@ -60,7 +108,14 @@ class FOBOps_SCR_SpawnTrigger : NO_SCR_SpawnTrigger
 		if (!crateEntity) return;
 		crateEntity.SetOrigin(location);
 		Print(location);
-	}*/
+	}
 	
+	protected void HintCheck()
+	{
+		SCR_HintManagerComponent hintComponent = SCR_HintManagerComponent.GetInstance();
+        hintComponent.ShowCustomHint("Death! Death! DEATH!", "Debug", 10);
+		int randomChance = Math.RandomInt(0, 100);
+		if (randomChance < 10) return;
+	}*/
  
 }

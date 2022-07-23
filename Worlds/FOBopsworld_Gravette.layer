@@ -1,9 +1,10 @@
-FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+FOBOps_SCR_SpawnTrigger GravetteTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
  coords 4117.63 35.133 7795.561
  m_sCrateSpawners {
   "Gravette1" "Gravette2" "Gravette3"
  }
  m_sTaskName "GravetteTask"
+ m_sHintTrigger "GravetteHintTrigger"
  {
   $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
    {
@@ -68,6 +69,48 @@ FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrig
      }
     }
    }
+   {
+    coords 176.262 38.91 85.778
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -181.99 -37.537 -86.186
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -125.919 -33.276 -123.201
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -242.846 -41.486 -17.953
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -80.958 -25.426 -57.236
+     }
+    }
+   }
+   {
+    coords -35.313 9.639 -325.557
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 29.975 -9.979 325.491
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 85.711 0.405 382.714
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -88.532 -18.433 317.923
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 109.321 5.913 171.225
+     }
+    }
+   }
   }
   $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
    Gravette1 {
@@ -115,4 +158,9 @@ FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrig
    }
   }
  }
+}
+FOBOps_SCR_HintTrigger GravetteHintTrigger : "{F228833A1E59437D}Prefabs/Markers/FOBOps_HintTriggerPrefab.et" {
+ coords 4117.63 35.133 7795.561
+ m_sTriggerName "GravetteTrigger"
+ m_sCrateName "GravetteCrate"
 }

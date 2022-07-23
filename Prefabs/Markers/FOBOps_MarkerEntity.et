@@ -1,0 +1,28 @@
+GenericEntity {
+ ID "59D49C5E0BD611B6"
+ components {
+  FOBOps_SCR_MarkerComponent "{59D4A432FD26E74B}" {
+  }
+  SCR_MapDescriptorComponent "{59D49C5E1C725185}" {
+   VisibleOnMap 0
+   MainType "Icon (generic)"
+  }
+  Hierarchy "{59D52A6C91BB0280}" {
+  }
+  RplComponent "{59D52A6C8E428EEA}" {
+  }
+ }
+ coords -2.491 -0.29 -7.524
+ EOnInit ""\
+ "		SCR_MapDescriptorComponent mapDescriptorComponent = SCR_MapDescriptorComponent.Cast(owner.FindComponent(SCR_MapDescriptorComponent));"\
+ "        if (!mapDescriptorComponent) return;"\
+ "            protected MapItem m_MapItem = mapDescriptorComponent.Item();"\
+ "            MapDescriptorProps props = m_MapItem.GetProps();"\
+ "            m_MapItem.SetProps(props);"\
+ "            props.SetFrontColor(Color.Red);"\
+ "            m_MapItem.SetBaseType(EMapDescriptorType.MDT_ICON);"\
+ "            props.SetImageDef(\"11-5\");"\
+ "			props.SetIconSize(0.25,0.3,1);"\
+ "            props.Activate(true);"\
+ "	"
+}

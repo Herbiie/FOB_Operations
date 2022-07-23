@@ -1,10 +1,11 @@
-FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
+FOBOps_SCR_SpawnTrigger StPhillipeTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrigger.et" {
  coords 4507.041 19.832 10778.363
  SphereRadius 800
  m_sCrateSpawners {
   "StPhillipe1" "StPhillipe2" "StPhillipe3" "StPhillipe4" "StPhillipe5" "StPhillipe6" "StPhillipe7"
  }
  m_sTaskName "StPhillipeTask"
+ m_sHintTrigger "StPhillipeHintTrigger"
  {
   $grp GenericEntity : "{2253E1D2B631DF1A}Prefabs/NO_DSF/Groups/FOBOps_SpawnAiDefend.et" {
    {
@@ -210,6 +211,48 @@ FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrig
      }
     }
    }
+   {
+    coords -164.152 18.095 -428.113
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords 194.668 -20.708 261.904
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords 61.525 -28.51 371.147
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords 218.976 -19.827 193.358
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords 192.355 -25.134 50.019
+     }
+    }
+   }
+   {
+    coords 88.364 -5.83 533.722
+    {
+     AIWaypointCycle {
+      ID "59BAED3D3830C72C"
+      coords -51.749 0.972 -418.003
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830C72E"
+      coords -9.896 5.02 -617.119
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D540"
+      coords -155.672 6.967 -471.618
+     }
+     SCR_AIWaypoint {
+      ID "59BAED3D3830D54F"
+      coords -171.828 -13.413 -237.521
+     }
+    }
+   }
   }
   $grp GenericEntity : "{F7A42562EE8E24E6}Prefabs/NO_DSF/Structures/SpawnStructure.et" {
    StPhillipe1 {
@@ -313,4 +356,10 @@ FOBOps_SCR_SpawnTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOps_BaseSpawnTrig
    }
   }
  }
+}
+FOBOps_SCR_HintTrigger StPhillipeHintTrigger : "{F228833A1E59437D}Prefabs/Markers/FOBOps_HintTriggerPrefab.et" {
+ coords 4507.041 19.832 10778.362
+ SphereRadius 800
+ m_sTriggerName "StPhillipeTrigger"
+ m_sCrateName "StPhillipeCrate"
 }

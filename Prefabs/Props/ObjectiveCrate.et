@@ -5,11 +5,16 @@ GenericEntity : "{A9989C248817C11E}Prefabs/Props/Military/AmmoBoxes/FIA/Equipmen
   }
   SignalsManagerComponent "{59C368171A7F0935}" {
   }
-  BaseTriggerComponent "{59BAE886DAB89A07}" : "{39A56BB9FC9D130F}Prefabs/Vehicles/Wheeled/Ural4320/BaseTriggerComponentSatchel.ct" {
+  BaseTriggerComponent "{59BAE886DAB89A07}" {
+  }
+  Hierarchy "{59C6BBE0985AA19D}" {
   }
   SCR_DestructionMultiPhaseComponent "{58F89684469E44B1}" {
    Enabled 1
    m_fBaseHealth 3000
+  }
+  SCR_MapDescriptorComponent "{59D4BC471DB5EFD3}" {
+   VisibleOnMap 0
   }
   ActionsManagerComponent "{5476B36C403D4CC0}" {
    additionalActions {
@@ -27,8 +32,6 @@ GenericEntity : "{A9989C248817C11E}Prefabs/Props/Military/AmmoBoxes/FIA/Equipmen
    }
   }
   NwkMovementComponent "{59BB2AE136D7DD19}" {
-  }
-  Hierarchy "{59C6BBE0985AA19D}" {
   }
  }
  coords 6465.453 162.33 6505.973

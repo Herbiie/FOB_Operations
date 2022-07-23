@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{7048D9DC05F97AEC}Prefabs/NO_DSF/FOBOps_HintTrigger.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}
