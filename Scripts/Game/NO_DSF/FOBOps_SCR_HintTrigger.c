@@ -13,6 +13,7 @@ class FOBOps_SCR_HintTrigger : SCR_BaseTriggerEntity
 	string m_sCrateName;	
 		
 	ref array<EntityID> activeMarkers = new array<EntityID>();
+	ref array<IEntity> allMarkers = new array<IEntity>();
 	
 	RplComponent m_pRplComponent;
 	
@@ -142,6 +143,14 @@ class FOBOps_SCR_HintTrigger : SCR_BaseTriggerEntity
 	{
 		if(!m_pRplComponent) return;
 		if(!m_pRplComponent.IsMaster()) return;
+		
+		GetAllChildren(this,allMarkers);
+		foreach (IEntity newMarker : allMarkers) {
+			if (!newMarker) return;
+			Rpc(switchOffMarker,newMarker.GetID());
+			switchOffMarker(newMarker.GetID());
+		}
+		
 		foreach (EntityID thisMarker : activeMarkers) {
 			IEntity newMarker = GetGame().GetWorld().FindEntityByID(thisMarker);
 			if (!newMarker) return;
@@ -154,13 +163,11 @@ class FOBOps_SCR_HintTrigger : SCR_BaseTriggerEntity
 		}
 	}
 	
-	external void deactiveMarkers()
+	void deactiveMarkers()
 	{
 		if(!m_pRplComponent) return;
 		if(!m_pRplComponent.IsMaster()) return;
-		SCR_HintManagerComponent hintComponent = SCR_HintManagerComponent.GetInstance();
-        hintComponent.ShowCustomHint("krow ot smees sihT", "DEBUG", 10);
-		array<EntityID> activeMarkersTemp = activeMarkers;
+		array<EntityID> activeMarkersTemp = GetMarkers(activeMarkers);
 		foreach (EntityID thisMarker : activeMarkersTemp) {
 			activeMarkers.Remove(activeMarkers.Find(thisMarker));
 			Rpc(switchOffMarker,thisMarker);
@@ -168,8 +175,16 @@ class FOBOps_SCR_HintTrigger : SCR_BaseTriggerEntity
 		}
 	}
 	
+	array<EntityID> GetMarkers(notnull array<EntityID> activeMarkersParam)
+	{
+		
+		array<EntityID> activeMarkersTemp = new array<EntityID>;
+		activeMarkersTemp.Copy(activeMarkersParam);
+		return activeMarkersTemp;
+	}
+	
 	[RplRpc(RplChannel.Reliable, RplRcver.Broadcast)]
-	protected void switchOffMarker(EntityID thisMarker)
+	void switchOffMarker(EntityID thisMarker)
 	{
 		IEntity newMarker = GetGame().GetWorld().FindEntityByID(thisMarker);
 		if (!newMarker) return;
