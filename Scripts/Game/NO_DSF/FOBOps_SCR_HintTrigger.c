@@ -22,7 +22,7 @@ class FOBOps_SCR_HintTrigger : SCR_BaseTriggerEntity
 		m_pRplComponent = RplComponent.Cast(owner.FindComponent(RplComponent));
 		if(!m_pRplComponent) Debug.Error("FOBOps_SCR_HintTrigger cannot hook to the RplComponent please add one!");
 		SCR_BaseGameMode gameMode = SCR_BaseGameMode.Cast(GetGame().GetGameMode());
-		gameMode.GetOnPlayerRegistered().Insert(OnPlayerRegistered);
+		gameMode.GetOnPlayerSpawned().Insert(OnPlayerSpawned);
 	}
 	
 	override bool ScriptedEntityFilterForQuery(IEntity ent) {
@@ -92,12 +92,14 @@ class FOBOps_SCR_HintTrigger : SCR_BaseTriggerEntity
 	protected void SetLoc(EntityID markerID, int newX, int newY, int newZ,bool isJIP)
 	{
 		
+		Print("Here 1");
 		IEntity newMarker = GetGame().GetWorld().FindEntityByID(markerID);
 		if (!newMarker) return;
 		
 		SCR_MapDescriptorComponent mapDescriptorComponent = SCR_MapDescriptorComponent.Cast(newMarker.FindComponent(SCR_MapDescriptorComponent));
 		protected MapItem m_MapItem = mapDescriptorComponent.Item();
 		
+		Print("Here 2");
 		if (m_MapItem.IsVisible()) return;
 		
 		if (!isJIP) {
@@ -106,10 +108,14 @@ class FOBOps_SCR_HintTrigger : SCR_BaseTriggerEntity
 		};
 		
 		
+		Print("Here 3 -> "+newX+" "+newY+" "+newZ);
 		vector newLoc = Vector(newX,newY,newZ);
 		newMarker.SetOrigin(newLoc);
 		
+		Print("Here 4");
 		m_MapItem.SetVisible(true);
+		
+		Print("Here 5");
 	}
 	
 	//Thanks to narcoleptic marshmallow for his message on the arma discord: https://discord.com/channels/105462288051380224/976155351999201390/978395568453865622 
@@ -127,7 +133,12 @@ class FOBOps_SCR_HintTrigger : SCR_BaseTriggerEntity
         }
     }
 	
-	protected void OnPlayerRegistered(int playerID)
+	protected void OnPlayerSpawned(int playerId, IEntity controlledEntity)
+	{
+		GetGame().GetCallqueue().CallLater(AfterSpawn, 5000,false);
+	}
+	
+	protected void AfterSpawn()
 	{
 		if(!m_pRplComponent) return;
 		if(!m_pRplComponent.IsMaster()) return;
@@ -139,6 +150,7 @@ class FOBOps_SCR_HintTrigger : SCR_BaseTriggerEntity
 			int newY = markerLoc[1];
 			int newZ = markerLoc[2];
 			Rpc(SetLoc,thisMarker,newX,newY,newZ,true);
+			SetLoc(thisMarker,newX,newY,newZ,true);
 		}
 	}
 	
