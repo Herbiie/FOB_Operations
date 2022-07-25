@@ -143,6 +143,9 @@ SCR_BaseGameMode NO_CoopSetup1 : "{AAD8DA66980A1D77}Prefabs/MP/NO_CoopSetup.et" 
     }
    }
   }
+  GarbageManager : "{9B883A7D8EBB282A}Prefabs/MP/Managers/GarbageManager.et" {
+   coords 0 0 0
+  }
  }
 }
 NO_SCR_TaskManager : "{2DF590FC1A531940}Prefabs/NO_DTF/TaskManager.et" {
