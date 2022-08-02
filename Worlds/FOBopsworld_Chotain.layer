@@ -48,7 +48,18 @@ FOBOps_SCR_SpawnTrigger ChotainTrigger : "{AA87D1DA15DAF5C9}Prefabs/NO_DSF/FOBOp
    {
     components {
      NO_SCR_AISpawnerComponent "{59BAED3D3830C7C5}" {
-      m_bRespawn 1
+      m_rSpawns {
+       CountSpawnsByOnlinePlayerWithManager "{59BAED3CD81E62DD}" {
+        prefab + {
+         5
+        }
+       }
+       CountSpawnsByOnlinePlayerWithManager "{59BAED3CD8DBCC6B}" {
+        prefab {
+         1 3
+        }
+       }
+      }
      }
     }
     coords 188.632 -21.602 62.565

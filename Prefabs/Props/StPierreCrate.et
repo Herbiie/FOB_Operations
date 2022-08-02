@@ -2,7 +2,7 @@ GenericEntity : "{CC7C867E0D538C93}Prefabs/Props/ObjectiveCrate.et" {
  ID "F0DBA538AC2A0552"
  components {
   NO_SCR_DTFRenamerComponent "{59F30C7AA07ED669}" {
-   m_sNewName "stpierrecrate"
+   m_sNewName "StPierreCrate"
   }
   ActionsManagerComponent "{5476B36C403D4CC0}" {
    additionalActions {

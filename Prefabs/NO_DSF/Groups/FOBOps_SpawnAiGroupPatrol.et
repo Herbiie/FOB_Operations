@@ -29,6 +29,12 @@ GenericEntity {
       4
      }
     }
+    CountSpawnsByOnlinePlayerWithManager "{59F8BB92FB109E82}" {
+     CountOfPlayers 2
+     prefab {
+      2
+     }
+    }
    }
    m_rnDefaultPrefabs {
     CountSpawnsByOnlinePlayer "{59BAED3D3830C7C9}" {
@@ -41,7 +47,7 @@ GenericEntity {
   RplComponent "{59BAED3D3830C7D4}" {
   }
  }
- coords 127.734 6.27 74.423
+ coords 188.632 -21.602 62.565
  {
   $grp SCR_AIWaypoint : "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et" {
    {
